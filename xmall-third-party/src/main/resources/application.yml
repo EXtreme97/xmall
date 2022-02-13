@@ -1,0 +1,17 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+    alicloud:
+      oss:
+        endpoint: oss-cn-beijing.aliyuncs.com
+        bucket: xmall97
+      access-key: LTAI5tFgs3DVq1DcPAUe3CAx
+      secret-key: ePyxIt9D4rPeYXTIDSKiqqciIfuHiV
+  application:
+    name: xmall-third-party
+
+
+server:
+  port: 30000
