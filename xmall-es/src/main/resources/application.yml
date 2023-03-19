@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+  application:
+    name: search
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://192.168.56.10:3306/xmall_pms
+    driver-class-name: com.mysql.jdbc.Driver
+server:
+  port: 8090

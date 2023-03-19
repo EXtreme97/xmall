@@ -132,6 +132,8 @@
     <orderEntry type="library" name="Maven: com.alibaba.spring:spring-context-support:1.0.10" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-context:3.1.0" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-config:2021.1" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-commons:3.1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.security:spring-security-crypto:5.6.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-loadbalancer:3.1.0" level="project" />
     <orderEntry type="library" name="Maven: io.projectreactor:reactor-core:3.4.12" level="project" />
     <orderEntry type="library" name="Maven: org.reactivestreams:reactive-streams:1.0.3" level="project" />
@@ -172,8 +174,6 @@
     <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-openfeign-core:3.1.0" level="project" />
     <orderEntry type="library" name="Maven: io.github.openfeign.form:feign-form-spring:3.8.0" level="project" />
     <orderEntry type="library" name="Maven: io.github.openfeign.form:feign-form:3.8.0" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-commons:3.1.0" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.security:spring-security-crypto:5.6.0" level="project" />
     <orderEntry type="library" name="Maven: io.github.openfeign:feign-core:11.7" level="project" />
     <orderEntry type="library" name="Maven: io.github.openfeign:feign-slf4j:11.7" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.32" level="project" />

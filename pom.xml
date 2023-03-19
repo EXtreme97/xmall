@@ -21,6 +21,7 @@
         <module>renren-fast</module>
         <module>renren-generator</module>
         <module>xmall-common</module>
+        <module>xmall-es</module>
     </modules>
 
 </project>
