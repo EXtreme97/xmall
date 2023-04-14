@@ -3,11 +3,13 @@ package com.example.xmall.ware.service.impl;
 import com.alibaba.cloud.commons.lang.StringUtils;
 import com.example.common.utils.R;
 import com.example.xmall.ware.feign.ProductFeignService;
+import com.example.xmall.ware.vo.SkuHasStockVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
@@ -83,6 +85,18 @@ public class WareSkuServiceImpl extends ServiceImpl<WareSkuDao, WareSkuEntity> i
         } else {
             wareSkuDao.addStock(skuId, wareId, skuNum);
         }
+    }
+
+    @Override
+    public List<SkuHasStockVo> getSkusHasStock(List<Long> skuIds) {
+        List<SkuHasStockVo> collect = skuIds.stream().map(sku -> {
+            SkuHasStockVo vo = new SkuHasStockVo();
+            Long count = baseMapper.getSkuStock(sku);
+            vo.setSkuId(sku);
+            vo.setHasStock(count == null ? false : count > 0);
+            return vo;
+        }).collect(Collectors.toList());
+        return collect;
     }
 
 }
