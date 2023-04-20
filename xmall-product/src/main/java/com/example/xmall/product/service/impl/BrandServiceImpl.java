@@ -4,7 +4,10 @@ import com.example.xmall.product.service.CategoryBrandRelationService;
 import com.example.xmall.product.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 import java.util.Map;
+
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -26,10 +29,10 @@ public class BrandServiceImpl extends ServiceImpl<BrandDao, BrandEntity> impleme
 
     @Override
     public PageUtils queryPage(Map<String, Object> params) {
-        String key= (String) params.get("key");
+        String key = (String) params.get("key");
         QueryWrapper<BrandEntity> queryWrapper = new QueryWrapper<>();
-        if(!StringUtils.isEmpty(key)){
-            queryWrapper.eq("brand_id",key).or().like("name",key);
+        if (!StringUtils.isEmpty(key)) {
+            queryWrapper.eq("brand_id", key).or().like("name", key);
         }
         IPage<BrandEntity> page = this.page(
                 new Query<BrandEntity>().getPage(params),
@@ -43,10 +46,15 @@ public class BrandServiceImpl extends ServiceImpl<BrandDao, BrandEntity> impleme
     @Override
     public void updateDetail(BrandEntity brand) {
         this.updateById(brand);
-        if(!StringUtils.isEmpty(brand.getName())){
-            categoryBrandRelationService.updateBrand(brand.getBrandId(),brand.getName());
+        if (!StringUtils.isEmpty(brand.getName())) {
+            categoryBrandRelationService.updateBrand(brand.getBrandId(), brand.getName());
             //TODO
         }
+    }
+
+    @Override
+    public List<BrandEntity> getBrandById(List<Long> brandIds) {
+        return baseMapper.selectList(new QueryWrapper<BrandEntity>().in("brandId", brandIds));
     }
 
 }

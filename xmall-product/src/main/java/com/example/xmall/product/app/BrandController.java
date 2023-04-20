@@ -1,6 +1,7 @@
 package com.example.xmall.product.app;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 
 import com.example.common.valid.AddGroup;
@@ -52,7 +53,12 @@ public class BrandController {
 
         return R.ok().put("brand", brand);
     }
+    @RequestMapping("/infos")
+    public R infos(@PathVariable("brandIds") List<Long> brandIds) {
+        List<BrandEntity> brands = brandService.getBrandById(brandIds);
 
+        return R.ok().put("brands", brands);
+    }
     /**
      * 保存
      */

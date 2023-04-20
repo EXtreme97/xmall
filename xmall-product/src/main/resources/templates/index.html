@@ -115,7 +115,7 @@
             <input id="searchText" type="text" placeholder=""/>
             <span style="background: url(../staticindex/img/img_12.png) 0 -1px;"></span>
             <!--<button><i class="glyphicon"></i></button>-->
-            <a href="#"><img src="index/img/img_09.png" onclick="search()"/></a>
+            <a href="javascript:search();" ><img src="index/img/img_09.png"/></a>
         </div>
         <div class="header_ico">
             <div class="header_gw">
@@ -201,8 +201,9 @@
         <div class="header_banner">
             <div class="header_main_left">
                 <ul>
-                    <li  th:each="category : ${categories}">
-                        <a href="#" class="header_main_left_a"   th:attr="ctg-data = ${category.catId}"><b th:text="${category.name}">家用电器</b></a>
+                    <li th:each="category : ${categories}">
+                        <a href="#" class="header_main_left_a" th:attr="ctg-data = ${category.catId}"><b
+                                th:text="${category.name}">家用电器</b></a>
                     </li>
                 </ul>
 
@@ -442,7 +443,8 @@
                                                 <a class="active" style="width: 50%;">国内港澳台</a>
                                                 <a style="width: 50%;">促销活动</a>
                                                 <div class="ser_ol_div1">
-                                                    <input type="text" placeholder="出发城市" style="margin-top: 10px;"/>
+                                                    <input type="text" placeholder="出发城市"
+                                                           style="margin-top: 10px;"/>
                                                     <input type="text" placeholder="到达城市"/>
                                                     <input type="text" placeholder="日期"/>
                                                     <input type="text" placeholder="酒店 商圈 地标"/>
@@ -523,7 +525,8 @@
                     <ul>
                         <li>
                             <img src="index/img/section_second_list_img1.jpg" alt="">
-                            <p>花王 (Merries) 妙而舒 纸尿裤 大号 L54片 尿不湿（9-14千克） （日本官方直采） 花王 (Merries) 妙而舒 纸尿裤 大号 L54片
+                            <p>花王 (Merries) 妙而舒 纸尿裤 大号 L54片 尿不湿（9-14千克） （日本官方直采） 花王 (Merries)
+                                妙而舒 纸尿裤 大号 L54片
                                 尿不湿（9-14千</p>
                             <span>¥83.9</span><s>¥99.9</s>
                         </li>
@@ -553,7 +556,8 @@
                     <ul>
                         <li>
                             <img src="index/img/section_second_list_img6.jpg" alt="">
-                            <p>Apple iMac 21.5英寸一体机（2017新款四核Core i5 处理器/8GB内存/1TB/RP555显卡/4K屏 MNDY2CH/A） Apple iMac
+                            <p>Apple iMac 21.5英寸一体机（2017新款四核Core i5 处理器/8GB内存/1TB/RP555显卡/4K屏
+                                MNDY2CH/A） Apple iMac
                                 21.5英寸一体机（2017新款四核Core i5 处理</p>
                             <span>¥9588.00</span><s>¥10288.00</s>
                         </li>
@@ -564,7 +568,8 @@
                         </li>
                         <li>
                             <img src="index/img/section_second_list_img8.jpg" alt="">
-                            <p>飞利浦（PHILIPS）电动牙刷HX6761/03亮白型成人充电式声波震动牙刷粉色 飞利浦（PHILIPS）电动牙刷HX6761/03亮白型成人充电式声波
+                            <p>飞利浦（PHILIPS）电动牙刷HX6761/03亮白型成人充电式声波震动牙刷粉色
+                                飞利浦（PHILIPS）电动牙刷HX6761/03亮白型成人充电式声波
                             </p>
                             <span>¥379.00</span><s>¥698.00</s>
                         </li>
@@ -610,7 +615,7 @@
 <script type="text/javascript">
     function search() {
         var keyword = $("#searchText").val()
-        window.location.href = "http://search.gulimall.com/search.html?keyword=" + keyword;
+        window.location.href = "http://localhost:8090/list.html?keyword=" + keyword;
     }
 
 </script>
