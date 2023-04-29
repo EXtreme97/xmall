@@ -50,10 +50,15 @@ spring:
         - id: gulimall_host_route
           uri: lb://xmall-product
           predicates:
-            - Path=**.gulimall.com
+            - Path=**.gulimall.com，item.gulimall.com
 
         - id: gulimall_search_route
           uri: lb://xmall-es
           predicates:
             - Path=search.gulimall.com
+
+        - id: gulimall_auth_route
+          uri: lb://xmall-auth-server
+          predicates:
+            - Path=auth.gulimall.com
 

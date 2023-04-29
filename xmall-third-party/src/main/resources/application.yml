@@ -4,6 +4,10 @@ spring:
       discovery:
         server-addr: 127.0.0.1:8848
     alicloud:
+      sms:
+        host: https://gyytz.market.alicloudapi.com
+        path: /sms/smsSend
+        appcode: 8b25a47a382b4e688cbe8f03c5143640
       oss:
         endpoint: oss-cn-beijing.aliyuncs.com
         bucket: xmall97
@@ -11,7 +15,7 @@ spring:
       secret-key: ePyxIt9D4rPeYXTIDSKiqqciIfuHiV
   application:
     name: xmall-third-party
-
-
 server:
   port: 30000
+
+
