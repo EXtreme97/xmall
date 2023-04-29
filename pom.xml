@@ -22,6 +22,12 @@
         <module>renren-generator</module>
         <module>xmall-common</module>
         <module>xmall-es</module>
+        <module>xmall-auth-server</module>
+        <module>xmall-test-oss-client</module>
+        <module>xmall-test-oss-server</module>
+        <module>xmall-third-party</module>
+        <module>xmall-gateway</module>
+        <module>xmall-cart</module>
     </modules>
 
 </project>
