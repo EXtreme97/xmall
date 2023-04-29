@@ -3,9 +3,13 @@ package com.example.xmall.product;
 import com.aliyun.oss.OSS;
 import com.aliyun.oss.OSSClient;
 import com.aliyun.oss.OSSClientBuilder;
+import com.example.xmall.product.dao.AttrGroupDao;
+import com.example.xmall.product.dao.SkuSaleAttrValueDao;
 import com.example.xmall.product.entity.BrandEntity;
 import com.example.xmall.product.service.BrandService;
 import com.example.xmall.product.service.CategoryService;
+import com.example.xmall.product.vo.SkuItemSaleAttrVo;
+import com.example.xmall.product.vo.SpuItemAttrGroupVo;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
@@ -17,6 +21,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.util.Arrays;
+import java.util.List;
 
 @Slf4j
 @RunWith(SpringRunner.class)
@@ -28,7 +33,19 @@ class XmallProductApplicationTests {
 //    OSSClient ossClient;
     @Autowired
     CategoryService categoryService;
+    @Autowired
+    AttrGroupDao attrGroupDao;
 
+    @Autowired
+    SkuSaleAttrValueDao skuSaleAttrValueDao;
+    @Test
+    public void test(){
+//        List<SpuItemAttrGroupVo> spuId = attrGroupDao.getAttrGroupWithAttrsSpuId(13L, 225L);
+//        System.out.println(spuId);
+        List<SkuItemSaleAttrVo> saleAttrsBySpuId = skuSaleAttrValueDao.getSaleAttrsBySpuId(13L);
+        System.out.println(saleAttrsBySpuId);
+
+    }
     @Test
     public void contextLoads() {
         BrandEntity brandEntity = new BrandEntity();
