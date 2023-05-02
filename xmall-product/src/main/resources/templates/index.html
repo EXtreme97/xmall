@@ -96,13 +96,15 @@
             <ul>
                 <li>
                     <a th:if="${session.loginUser != null}">欢迎, [[${session.loginUser.nickname}]]</a>
-                    <a th:if="${session.loginUser == null}" href="http://localhost:20000/log.html">你好，请登录</a>
+                    <a th:if="${session.loginUser == null}" href="http://192.168.56.1:20000/log.html">你好，请登录</a>
                 </li>
                 <li>
-                    <a th:if="${session.loginUser == null}" href="http://localhost:20000/reg.html" class="li_2">免费注册</a>
+                    <a th:if="${session.loginUser == null}" href="http://192.168.56.1:20000/reg.html"
+                       class="li_2">免费注册</a>
                 </li>
                 <li>
-                    <a th:if="${session.loginUser != null}" href="http://localhost:20000/log.html" class="li_2">立即退出</a>
+                    <a th:if="${session.loginUser != null}" href="http://192.168.56.1:20000/log.html"
+                       class="li_2">立即退出</a>
                 </li>
                 <span>|</span>
                 <li>
@@ -124,7 +126,7 @@
         <div class="header_ico">
             <div class="header_gw">
                 <img src="index/img/img_15.png"/>
-                <span><a href="/购物车\One_JDshop.html">我的购物车</a></span>
+                <span><a href="http://192.168.56.1:22000/cartList.html">我的购物车</a></span>
                 <span>0</span>
             </div>
             <div class="header_ko">

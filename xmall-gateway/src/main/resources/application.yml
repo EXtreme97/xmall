@@ -62,3 +62,8 @@ spring:
           predicates:
             - Path=auth.gulimall.com
 
+        - id: gulimall_cart_route
+          uri: lb://xmall-cart
+          predicates:
+            - Path=cart.gulimall.com
+

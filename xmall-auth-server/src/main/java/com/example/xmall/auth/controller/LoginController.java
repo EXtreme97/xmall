@@ -63,7 +63,7 @@ public class LoginController {
             System.out.println(errors.toString());
 
             attributes.addFlashAttribute("errors", errors);
-            return "redirect://http://localhost:20000/reg.html";
+            return "redirect://http://192.168.56.1:20000/reg.html";
         }//1、效验验证码
         String code = vo.getCode();
 
@@ -78,14 +78,14 @@ public class LoginController {
                 R register = memberFeignService.register(vo);
                 if (register.getCode() == 0) {
                     //成功
-                    return "redirect:http://localhost:20000/log.html";
+                    return "redirect:http://192.168.56.1:20000/log.html";
                 } else {
                     //失败
                     Map<String, String> errors = new HashMap<>();
                     errors.put("msg", register.getData("msg", new TypeReference<String>() {
                     }));
                     attributes.addFlashAttribute("errors", errors);
-                    return "redirect:http://localhost:20000/reg.html";
+                    return "redirect:http://192.168.56.1:20000/reg.html";
                 }
 
 
@@ -94,14 +94,14 @@ public class LoginController {
                 Map<String, String> errors = new HashMap<>();
                 errors.put("code", "验证码错误");
                 attributes.addFlashAttribute("errors", errors);
-                return "redirect:http://localhost:20000/reg.html";
+                return "redirect:http://192.168.56.1:20000/reg.html";
             }
         } else {
             //效验出错回到注册页面
             Map<String, String> errors = new HashMap<>();
             errors.put("code", "验证码错误");
             attributes.addFlashAttribute("errors", errors);
-            return "redirect:http://localhost:20000/reg.html";
+            return "redirect:http://192.168.56.1:20000/reg.html";
         }
     }
 
@@ -114,7 +114,7 @@ public class LoginController {
         if (attribute == null) {
             return "log";
         } else {
-            return "redirect:http://localhost:11000/";
+            return "redirect:http://192.168.56.1:11000/";
         }
 
     }
@@ -126,13 +126,13 @@ public class LoginController {
             MemberRespVo data = login.getData("data", new TypeReference<MemberRespVo>() {
             });
             session.setAttribute(AuthServerConstant.LOGIN_USER,data);
-            return "redirect:http://localhost:11000/";
+            return "redirect:http://192.168.56.1:11000/";
         } else {
             Map<String, String> errors = new HashMap<>();
             errors.put("msg", login.getData("msg", new TypeReference<String>() {
             }));
             attributes.addFlashAttribute("errors", errors);
-            return "redirect:http://localhost:20000/log.html";
+            return "redirect:http://192.168.56.1:20000/log.html";
         }
     }
 }
