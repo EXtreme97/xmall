@@ -17,6 +17,7 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
+import java.math.BigDecimal;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
@@ -90,15 +91,16 @@ public class CartServiceImpl implements CartService {
         Cart cart = new Cart();
         if (userInforTo.getUserId() != null) {
             String tmpCartKey = CART_PREFIX + userInforTo.getUserKey();
+            String cartKey = CART_PREFIX + userInforTo.getUserId();
             List<CartItem> tmpCart = getCartItems(tmpCartKey);
             if (tmpCart != null) {
                 //合并
                 for (CartItem cartItem : tmpCart) {
                     addToCart(cartItem.getSkuId(), cartItem.getCount());
                 }
-                clearCart(tmpCartKey);
+//                clearCart(tmpCartKey);
             }
-            List<CartItem> cartItems = getCartItems(tmpCartKey);
+            List<CartItem> cartItems = getCartItems(cartKey);
             cart.setItems(cartItems);
         } else {
             //没登录
@@ -137,6 +139,26 @@ public class CartServiceImpl implements CartService {
     public void deleteItem(Long skuId) {
         BoundHashOperations<String, Object, Object> cartOps = getCartOps();
         cartOps.delete(skuId.toString());
+    }
+
+    @Override
+    public List<CartItem> getUserCartItems() {
+        UserInforTo userInforTo = CartInterceptor.threadLocal.get();
+        if (userInforTo.getUserId() == null) {
+            return null;
+        } else {
+            String cartKey = CART_PREFIX + userInforTo.getUserId();
+            List<CartItem> cartItems = getCartItems(cartKey);
+            List<CartItem> collect = cartItems.stream().
+                    filter(item -> item.getCheck()).map(item -> {
+                        R price = productFeignService.getPrice(item.getSkuId());
+                        String data = (String) price.get("data");
+                        item.setPrice(new BigDecimal(data));
+                        return item;
+                    })
+                    .collect(Collectors.toList());
+            return collect;
+        }
     }
 
     private BoundHashOperations<String, Object, Object> getCartOps() {

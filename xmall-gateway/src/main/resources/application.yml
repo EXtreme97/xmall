@@ -67,3 +67,10 @@ spring:
           predicates:
             - Path=cart.gulimall.com
 
+        - id: gulimall_order_route
+          uri: lb://xmall-order
+          predicates:
+            - Path=order.gulimall.com
+  main:
+    allow-circular-references: true
+

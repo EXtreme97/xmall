@@ -9,3 +9,5 @@ spring:
         server-addr: 127.0.0.1:8848
   redis:
     host: 192.168.56.10
+  main:
+    allow-circular-references: true

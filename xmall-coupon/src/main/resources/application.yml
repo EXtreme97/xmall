@@ -11,6 +11,8 @@ spring:
 
   application:
     name: xmall-coupon
+  main:
+    allow-circular-references: true
 mybatis-plus:
   mapper-locations: classpath:/mapper/**/*.xml
   global-config:

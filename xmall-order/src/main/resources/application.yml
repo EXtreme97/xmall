@@ -1,7 +1,7 @@
 spring:
   datasource:
     username: root
-    password: 1234456
+    password: 123456
     url: jdbc:mysql://192.168.56.10:3306/gulimall_oms
     driver-class-name: com.mysql.cj.jdbc.Driver
   cloud:
@@ -10,11 +10,28 @@ spring:
         server-addr: 127.0.0.1:8848
   application:
     name: xmall-order
+  rabbitmq:
+    host: 192.168.56.10
+    port: 5672
+    virtual-host: /
+    publisher-confirm-type: correlated
+    template:
+      mandatory: true
+    publisher-returns: true
+  thymeleaf:
+    cache: false
+  session:
+    store-type: redis
+  redis:
+    host: 192.168.56.10
+    port: 6379
+  main:
+    allow-circular-references: true
 mybatis-plus:
   mapper-locations: classpath:/mapper/**/*.xml
   global-config:
     db-config:
       id-type: auto
-
 server:
   port: 9000
+

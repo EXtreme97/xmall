@@ -4,14 +4,14 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
+import com.example.common.exception.BizCodeEnum;
+import com.example.common.exception.NoStockException;
+import com.example.xmall.ware.vo.LockStockResultVo;
 import com.example.xmall.ware.vo.SkuHasStockVo;
+import com.example.xmall.ware.vo.WareSkuLockVo;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import com.example.xmall.ware.entity.WareSkuEntity;
 import com.example.xmall.ware.service.WareSkuService;
@@ -32,7 +32,18 @@ public class WareSkuController {
     @Autowired
     private WareSkuService wareSkuService;
 
-    @RequestMapping("/hasstock")
+    @PostMapping("/lock/order")
+    public R orderLockStcok(@RequestBody WareSkuLockVo vo) {
+        try {
+            Boolean lockStock = wareSkuService.orderLockStock(vo);
+            return R.ok().setData(lockStock);
+        } catch (NoStockException e) {
+            return R.error(BizCodeEnum.NO_STOCK_EXCEPTION.getCode(), BizCodeEnum.NO_STOCK_EXCEPTION.getMsg());
+        }
+
+    }
+
+    @PostMapping("/hasstock")
     public R getSkusHasStock(@RequestBody List<Long> skuIds) {
         List<SkuHasStockVo> vos = wareSkuService.getSkusHasStock(skuIds);
         return R.ok().setData(vos);

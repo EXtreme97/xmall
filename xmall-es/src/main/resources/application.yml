@@ -13,5 +13,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
   thymeleaf:
     cache: false
+  main:
+    allow-circular-references: true
 server:
   port: 8090
