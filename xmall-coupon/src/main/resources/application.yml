@@ -21,4 +21,7 @@ mybatis-plus:
 
 server:
   port: 7000
+seata:
+  tx-service-group: my_test_tx_group
+  application-id: seata-server
 

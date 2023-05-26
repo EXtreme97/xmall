@@ -19,4 +19,6 @@ spring:
     allow-circular-references: true
 server:
   port: 30000
-
+seata:
+  tx-service-group: my_test_tx_group
+  application-id: seata-server

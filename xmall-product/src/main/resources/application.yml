@@ -3,7 +3,12 @@ spring:
     username: root
     password: 123456
     url: jdbc:mysql://192.168.56.10:3306/gulimall_pms
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url: jdbc:mysql://192.168.56.10:3306/seata
+      username: root
+      password: 123456
   application:
     name: xmall-product
   cloud:
@@ -15,6 +20,9 @@ spring:
       secret-key: ePyxIt9D4rPeYXTIDSKiqqciIfuHiV
       oss:
         endpoint: oss-cn-beijing.aliyuncs.com
+    alibaba:
+      seata:
+        tx-service-group: seata_tx_server
   main:
     allow-circular-references: true
   jackson:
@@ -42,4 +50,6 @@ server:
 logging:
   level:
     com.example: debug
-
+seata:
+  tx-service-group: my_test_tx_group
+  application-id: seata-server

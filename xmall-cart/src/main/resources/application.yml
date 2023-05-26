@@ -11,3 +11,6 @@ spring:
     host: 192.168.56.10
   main:
     allow-circular-references: true
+seata:
+  tx-service-group: my_test_tx_group
+  application-id: seata-server

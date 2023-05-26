@@ -18,6 +18,8 @@ spring:
     template:
       mandatory: true
     publisher-returns: true
+    username: guest
+    password: guest
   thymeleaf:
     cache: false
   session:
@@ -34,4 +36,6 @@ mybatis-plus:
       id-type: auto
 server:
   port: 9000
-
+seata:
+  tx-service-group: my_test_tx_group
+  application-id: seata-server

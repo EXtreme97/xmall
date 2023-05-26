@@ -8,7 +8,7 @@ spring:
   datasource:
     username: root
     password: 123456
-    url: jdbc:mysql://192.168.56.10:3306/xmall_pms
+    url: jdbc:mysql://192.168.56.10:3306/gulimall_pms
     driver-class-name: com.mysql.jdbc.Driver
   thymeleaf:
     cache: false
@@ -24,4 +24,7 @@ server:
   servlet:
     session:
       timeout: 30m
+seata:
+  tx-service-group: my_test_tx_group
+  application-id: seata-server
 

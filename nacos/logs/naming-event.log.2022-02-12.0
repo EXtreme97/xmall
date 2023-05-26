@@ -1,0 +1,20 @@
+2022-02-12 21:11:10,817 INFO {POS} {IP-DISABLED} valid: 192.168.56.1:7000@DEFAULT@xmall-coupon, region: unknown, msg: client last beat: 1644671451685
+
+2022-02-12 21:11:47,176 INFO {POS} {IP-DISABLED} valid: 192.168.56.1:15000@DEFAULT@xmall-product, region: unknown, msg: client last beat: 1644671491704
+
+2022-02-12 21:21:36,758 INFO {POS} {IP-DISABLED} valid: 192.168.56.1:8080@DEFAULT@renren-fast, region: unknown, msg: client last beat: 1644672079227
+
+2022-02-12 21:21:37,439 INFO {POS} {IP-DISABLED} valid: 192.168.56.1:88@DEFAULT@xmall-gateway, region: unknown, msg: client last beat: 1644672079553
+
+2022-02-12 21:21:37,439 INFO {POS} {IP-DISABLED} valid: 192.168.56.1:8000@DEFAULT@xmall-member, region: unknown, msg: client last beat: 1644672079218
+
+2022-02-12 21:21:37,439 INFO {POS} {IP-DISABLED} valid: 192.168.56.1:30000@DEFAULT@xmall-third-party, region: unknown, msg: client last beat: 1644672080526
+
+2022-02-12 21:21:41,758 INFO {POS} {IP-DISABLED} valid: 192.168.56.1:7000@DEFAULT@xmall-coupon, region: unknown, msg: client last beat: 1644672083481
+
+2022-02-12 22:14:56,518 INFO {POS} {IP-DISABLED} valid: 192.168.56.1:15000@DEFAULT@xmall-product, region: unknown, msg: client last beat: 1644675280651
+
+2022-02-12 22:29:19,182 INFO {POS} {IP-DISABLED} valid: 192.168.56.1:88@DEFAULT@xmall-gateway, region: unknown, msg: client last beat: 1644676139289
+
+2022-02-12 22:39:25,117 INFO {POS} {IP-DISABLED} valid: 192.168.56.1:11000@DEFAULT@xmall-ware, region: unknown, msg: client last beat: 1644676745268
+

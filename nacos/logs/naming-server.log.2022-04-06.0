@@ -1,0 +1,26 @@
+2022-04-06 11:16:48,560 WARN naming.distro config will be removed, please use core.protocol.distro replace.
+
+2022-04-06 11:16:48,560 WARN Using naming.distro config to replace core.distro config
+
+2022-04-06 11:16:48,773 INFO open empty service auto clean job, initialDelay : 50000 ms, period : 30000 ms
+
+2022-04-06 11:16:48,774 INFO listen for service meta change
+
+2022-04-06 11:16:48,783 INFO upgrade.state file is not exist
+
+2022-04-06 11:16:52,294 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.CmdbSelectorContextBuilder) contextType(CMDB) successfully.
+
+2022-04-06 11:16:52,295 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.CmdbLabelSelector) type(label) contextType(CMDB) successfully.
+
+2022-04-06 11:16:55,648 INFO Load instance extension handler []
+
+2022-04-06 11:17:12,791 INFO Client connection 192.168.56.1:8080#true connect
+
+2022-04-06 11:17:12,804 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='renren-fast', ephemeral=true, revision=0}, 192.168.56.1:8080#true
+
+2022-04-06 11:20:14,949 INFO Client connection 192.168.56.1:61706#true connect
+
+2022-04-06 11:20:16,435 INFO Client connection 192.168.56.1:88#true connect
+
+2022-04-06 11:20:16,435 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='xmall-gateway', ephemeral=true, revision=0}, 192.168.56.1:88#true
+

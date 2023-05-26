@@ -10,7 +10,7 @@ import org.springframework.util.StringUtils;
 
 import javax.sql.DataSource;
 
-@Configuration
+//@Configuration
 public class MySeataConfig {
     @Autowired
     DataSourceProperties dataSourceProperties;

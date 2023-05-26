@@ -1,17 +1,31 @@
 package com.example.xmall.ware.service.impl;
 
 import com.alibaba.cloud.commons.lang.StringUtils;
+import com.alibaba.fastjson.TypeReference;
 import com.example.common.exception.NoStockException;
+import com.example.common.to.OrderTo;
+import com.example.common.to.mq.StockDetailTo;
+import com.example.common.to.mq.StockLockedTo;
 import com.example.common.utils.R;
+import com.example.xmall.ware.entity.WareOrderTaskDetailEntity;
+import com.example.xmall.ware.entity.WareOrderTaskEntity;
+import com.example.xmall.ware.feign.OrderFeignService;
 import com.example.xmall.ware.feign.ProductFeignService;
-import com.example.xmall.ware.vo.LockStockResultVo;
-import com.example.xmall.ware.vo.OrderItemVo;
-import com.example.xmall.ware.vo.SkuHasStockVo;
-import com.example.xmall.ware.vo.WareSkuLockVo;
+import com.example.xmall.ware.service.WareOrderTaskDetailService;
+import com.example.xmall.ware.service.WareOrderTaskService;
+import com.example.xmall.ware.vo.*;
+import com.rabbitmq.client.Channel;
 import lombok.Data;
+import org.springframework.amqp.core.Message;
+import org.springframework.amqp.rabbit.annotation.RabbitHandler;
+import org.springframework.amqp.rabbit.annotation.RabbitListener;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -27,7 +41,7 @@ import com.example.xmall.ware.entity.WareSkuEntity;
 import com.example.xmall.ware.service.WareSkuService;
 import org.springframework.transaction.annotation.Transactional;
 
-
+@RabbitListener(queues = "stock.release.stock.queue")
 @Service("wareSkuService")
 public class WareSkuServiceImpl extends ServiceImpl<WareSkuDao, WareSkuEntity> implements WareSkuService {
 
@@ -35,6 +49,23 @@ public class WareSkuServiceImpl extends ServiceImpl<WareSkuDao, WareSkuEntity> i
     WareSkuDao wareSkuDao;
     @Autowired
     ProductFeignService productFeignService;
+    @Autowired
+    WareOrderTaskService orderTaskService;
+    @Autowired
+    WareOrderTaskDetailService wareOrderTaskDetailService;
+    @Autowired
+    RabbitTemplate rabbitTemplate;
+    @Autowired
+    OrderFeignService orderFeignService;
+
+
+    private void unlockStock(Long skuId, Long wareId, Integer num, Long taskDetailId) {
+        wareSkuDao.unlockStock(skuId, wareId, num, taskDetailId);
+        WareOrderTaskDetailEntity entity = new WareOrderTaskDetailEntity();
+        entity.setId(taskDetailId);
+        entity.setLockStatus(2);
+        wareOrderTaskDetailService.updateById(entity);
+    }
 
     @Override
     public PageUtils queryPage(Map<String, Object> params) {
@@ -107,7 +138,10 @@ public class WareSkuServiceImpl extends ServiceImpl<WareSkuDao, WareSkuEntity> i
 
     @Transactional(rollbackFor = NoStockException.class)
     @Override
-    public Boolean orderLockStock(WareSkuLockVo vo) {
+    public Boolean orderLockStock(WareSkuLockVo vo) throws InvocationTargetException, IllegalAccessException {
+        WareOrderTaskEntity taskEntity = new WareOrderTaskEntity();
+        taskEntity.setOrderSn(vo.getOrderSn());
+        orderTaskService.save(taskEntity);
         List<OrderItemVo> locks = vo.getLocks();
         List<SkuWareHasStock> collect = locks.stream().map(item -> {
             SkuWareHasStock stock = new SkuWareHasStock();
@@ -128,7 +162,14 @@ public class WareSkuServiceImpl extends ServiceImpl<WareSkuDao, WareSkuEntity> i
             for (Long wareId : wareIds) {
                 Long count = wareSkuDao.lockSkuStock(skuId, wareId, hasStock.getNum());
                 if (count == 1) {
-                    skuStocked = true;
+                    WareOrderTaskDetailEntity wareOrderTaskDetailEntity = new WareOrderTaskDetailEntity(null, skuId, "", hasStock.getNum(), taskEntity.getId(), wareId, 1);
+                    wareOrderTaskDetailService.save(wareOrderTaskDetailEntity);
+                    StockLockedTo lockedTo = new StockLockedTo();
+                    lockedTo.setId(taskEntity.getId());
+                    StockDetailTo detailTo = new StockDetailTo();
+                    BeanUtils.copyProperties(wareOrderTaskDetailEntity, detailTo);
+                    lockedTo.setDetail(detailTo);
+                    rabbitTemplate.convertAndSend("stock-event-exchange", "stock.lock", lockedTo);
                     break;
                 }
             }
@@ -138,6 +179,43 @@ public class WareSkuServiceImpl extends ServiceImpl<WareSkuDao, WareSkuEntity> i
         }
 
         return true;
+    }
+
+    @Override
+    public void unlockStock(StockLockedTo to) {
+        System.out.println("收到解锁库存的消息");
+        StockDetailTo detail = to.getDetail();
+        Long detailId = detail.getId();
+        WareOrderTaskDetailEntity byId = wareOrderTaskDetailService.getById(detailId);
+        if (byId != null) {
+            Long id = to.getId();
+            WareOrderTaskEntity taskEntity = orderTaskService.getById(id);
+            String orderSn = taskEntity.getOrderSn();
+            R r = orderFeignService.getOrderStatus(orderSn);
+            if (r.getCode() == 0) {
+                OrderVo data = r.getData(new TypeReference<OrderVo>() {
+                });
+                if (data == null || data.getStatus() == 4) {
+                    if (byId.getLockStatus() == 1) {
+                        unlockStock(detail.getSkuId(), detail.getWareId(), detail.getSkuNum(), detail.getTaskId());
+                    }
+                } else {
+                }
+            }
+        } else {
+        }
+    }
+
+    @Transactional
+    @Override
+    public void unlockStock(OrderTo to) {
+        String orderSn = to.getOrderSn();
+        WareOrderTaskEntity taskEntity = orderTaskService.getOrderTaskByOrderSn(orderSn);
+        Long id = taskEntity.getId();
+        List<WareOrderTaskDetailEntity> entities = wareOrderTaskDetailService.list(new QueryWrapper<WareOrderTaskDetailEntity>().eq("task_id", id).eq("lock_status", 1));
+        for (WareOrderTaskDetailEntity entity : entities) {
+            unlockStock(entity.getSkuId(), entity.getWareId(), entity.getSkuNum(), entity.getId());
+        }
     }
 
     @Data

@@ -1,5 +1,6 @@
 package com.example.xmall.ware.controller;
 
+import java.lang.reflect.InvocationTargetException;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
@@ -39,6 +40,8 @@ public class WareSkuController {
             return R.ok().setData(lockStock);
         } catch (NoStockException e) {
             return R.error(BizCodeEnum.NO_STOCK_EXCEPTION.getCode(), BizCodeEnum.NO_STOCK_EXCEPTION.getMsg());
+        } catch (Exception e) {
+            throw new RuntimeException(e);
         }
 
     }

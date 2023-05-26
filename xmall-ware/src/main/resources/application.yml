@@ -24,3 +24,6 @@ server:
 logging:
   level:
     com.example: debug
+seata:
+  tx-service-group: my_test_tx_group
+  application-id: seata-server

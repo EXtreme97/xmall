@@ -1,0 +1,902 @@
+2023-05-14 08:32:51,065 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=1}
+
+2023-05-14 08:32:51,528 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 08:32:51,574 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:50985, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,50985,2319596631500
+
+2023-05-14 08:32:51,575 INFO send udp packet: 192.168.115.1,50985,2319596631500
+
+2023-05-14 08:32:51,608 INFO [PUSH-SUCC] 82ms, all delay time 659ms, SLA 543ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=1}, DataSize=1, target=192.168.115.1
+
+2023-05-14 08:35:51,308 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 08:35:51,309 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:50985, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,50985,2499375867400
+
+2023-05-14 08:35:51,309 INFO send udp packet: 192.168.115.1,50985,2499375867400
+
+2023-05-14 08:35:51,316 INFO [PUSH-SUCC] 8ms, all delay time 609ms, SLA 609ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=2}, DataSize=0, target=192.168.115.1
+
+2023-05-14 09:07:52,655 INFO DEFAULT_GROUP@@xmall-gateway is changed, add it to push queue.
+
+2023-05-14 09:07:52,698 INFO serviceName: DEFAULT_GROUP@@xmall-gateway@@DEFAULT changed, schedule push for: 192.168.115.1:53654, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,53654,4420723545200
+
+2023-05-14 09:07:52,700 INFO send udp packet: 192.168.115.1,53654,4420723545200
+
+2023-05-14 09:07:52,706 INFO [PUSH-SUCC] 52ms, all delay time 592ms for subscriber 192.168.115.1, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-gateway', ephemeral=true, revision=0}, DataSize=0
+
+2023-05-14 09:07:55,598 INFO DEFAULT_GROUP@@xmall-gateway is changed, add it to push queue.
+
+2023-05-14 09:07:55,614 INFO serviceName: DEFAULT_GROUP@@xmall-gateway@@DEFAULT changed, schedule push for: 192.168.115.1:53654, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,53654,4423665741900
+
+2023-05-14 09:07:55,614 INFO send udp packet: 192.168.115.1,53654,4423665741900
+
+2023-05-14 09:07:55,652 INFO [PUSH-SUCC] 54ms, all delay time 602ms, SLA 605ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-gateway', ephemeral=true, revision=1}, DataSize=1, target=192.168.115.1
+
+2023-05-14 09:08:14,342 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=1}
+
+2023-05-14 09:08:14,853 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 09:08:14,853 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:54180, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,54180,4442920430400
+
+2023-05-14 09:08:14,853 INFO send udp packet: 192.168.115.1,54180,4442920430400
+
+2023-05-14 09:08:14,883 INFO [PUSH-SUCC] 30ms, all delay time 631ms, SLA 541ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=1}, DataSize=1, target=192.168.115.1
+
+2023-05-14 09:20:56,091 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 09:20:56,092 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:54180, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,54180,5204159486700
+
+2023-05-14 09:20:56,092 INFO send udp packet: 192.168.115.1,54180,5204159486700
+
+2023-05-14 09:20:56,099 INFO [PUSH-SUCC] 8ms, all delay time 512ms, SLA 512ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=2}, DataSize=0, target=192.168.115.1
+
+2023-05-14 09:21:29,671 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=3}
+
+2023-05-14 09:21:30,102 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 09:21:30,102 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:51805, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,51805,5238169728500
+
+2023-05-14 09:21:30,102 INFO send udp packet: 192.168.115.1,51805,5238169728500
+
+2023-05-14 09:21:30,137 INFO [PUSH-SUCC] 35ms, all delay time 558ms, SLA 466ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=3}, DataSize=1, target=192.168.115.1
+
+2023-05-14 09:23:44,903 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 09:23:44,903 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:51805, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,51805,5372970484300
+
+2023-05-14 09:23:44,903 INFO send udp packet: 192.168.115.1,51805,5372970484300
+
+2023-05-14 09:23:44,907 INFO [PUSH-SUCC] 4ms, all delay time 511ms, SLA 511ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=4}, DataSize=0, target=192.168.115.1
+
+2023-05-14 09:24:17,489 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=5}
+
+2023-05-14 09:24:17,948 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 09:24:17,948 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:65315, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,65315,5406015586400
+
+2023-05-14 09:24:17,948 INFO send udp packet: 192.168.115.1,65315,5406015586400
+
+2023-05-14 09:24:17,984 INFO [PUSH-SUCC] 36ms, all delay time 583ms, SLA 495ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=5}, DataSize=1, target=192.168.115.1
+
+2023-05-14 09:26:02,064 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 09:26:02,064 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:65315, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,65315,5510132306100
+
+2023-05-14 09:26:02,065 INFO send udp packet: 192.168.115.1,65315,5510132306100
+
+2023-05-14 09:26:02,072 INFO [PUSH-SUCC] 8ms, all delay time 529ms, SLA 529ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=6}, DataSize=0, target=192.168.115.1
+
+2023-05-14 09:26:26,172 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=7}
+
+2023-05-14 09:26:26,618 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 09:26:26,618 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:65315, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,65315,5534686310300
+
+2023-05-14 09:26:26,619 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 09:26:26,619 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:52703, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,52703,5534686916100
+
+2023-05-14 09:26:26,619 INFO send udp packet: 192.168.115.1,65315,5534686310300
+
+2023-05-14 09:26:26,620 INFO send udp packet: 192.168.115.1,52703,5534686916100
+
+2023-05-14 09:26:26,655 INFO [PUSH-SUCC] 37ms, all delay time 578ms, SLA 483ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=7}, DataSize=1, target=192.168.115.1
+
+2023-05-14 09:26:36,621 INFO retry to push data, key: 192.168.115.1,65315,5534686310300
+
+2023-05-14 09:26:46,622 WARN max re-push times reached, retry times 2, key: 192.168.115.1,65315,5534686310300
+
+2023-05-14 09:26:46,622 ERROR [PUSH-FAIL] 20004ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=7}, reason=null, target=192.168.115.1
+
+2023-05-14 09:29:16,017 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 09:29:16,018 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:52703, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,52703,5704085008400
+
+2023-05-14 09:29:16,019 INFO send udp packet: 192.168.115.1,52703,5704085008400
+
+2023-05-14 09:29:16,029 INFO [PUSH-SUCC] 12ms, all delay time 580ms, SLA 580ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=8}, DataSize=0, target=192.168.115.1
+
+2023-05-14 09:29:37,785 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=9}
+
+2023-05-14 09:29:38,231 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 09:29:38,231 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:52703, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,52703,5726298709800
+
+2023-05-14 09:29:38,231 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 09:29:38,231 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:59253, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,59253,5726299119100
+
+2023-05-14 09:29:38,231 INFO send udp packet: 192.168.115.1,52703,5726298709800
+
+2023-05-14 09:29:38,232 INFO send udp packet: 192.168.115.1,59253,5726299119100
+
+2023-05-14 09:29:38,266 INFO [PUSH-SUCC] 35ms, all delay time 576ms, SLA 481ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=9}, DataSize=1, target=192.168.115.1
+
+2023-05-14 09:29:48,233 INFO retry to push data, key: 192.168.115.1,52703,5726298709800
+
+2023-05-14 09:29:58,235 WARN max re-push times reached, retry times 2, key: 192.168.115.1,52703,5726298709800
+
+2023-05-14 09:29:58,235 ERROR [PUSH-FAIL] 20004ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=9}, reason=null, target=192.168.115.1
+
+2023-05-14 09:30:06,804 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 09:30:06,805 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:59253, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,59253,5754871895700
+
+2023-05-14 09:30:06,805 INFO send udp packet: 192.168.115.1,59253,5754871895700
+
+2023-05-14 09:30:06,813 INFO [PUSH-SUCC] 9ms, all delay time 512ms, SLA 513ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=10}, DataSize=0, target=192.168.115.1
+
+2023-05-14 09:30:29,926 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=11}
+
+2023-05-14 09:30:30,358 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 09:30:30,358 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:59253, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,59253,5778425935400
+
+2023-05-14 09:30:30,358 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 09:30:30,358 INFO send udp packet: 192.168.115.1,59253,5778425935400
+
+2023-05-14 09:30:30,359 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:50216, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,50216,5778426261900
+
+2023-05-14 09:30:30,359 INFO send udp packet: 192.168.115.1,50216,5778426261900
+
+2023-05-14 09:30:30,392 INFO [PUSH-SUCC] 34ms, all delay time 556ms, SLA 466ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=11}, DataSize=1, target=192.168.115.1
+
+2023-05-14 09:30:40,359 INFO retry to push data, key: 192.168.115.1,59253,5778425935400
+
+2023-05-14 09:30:50,361 WARN max re-push times reached, retry times 2, key: 192.168.115.1,59253,5778425935400
+
+2023-05-14 09:30:50,361 ERROR [PUSH-FAIL] 20003ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=11}, reason=null, target=192.168.115.1
+
+2023-05-14 09:35:34,419 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='xmall-ware', ephemeral=true, revision=1}
+
+2023-05-14 09:35:34,865 INFO DEFAULT_GROUP@@xmall-ware is changed, add it to push queue.
+
+2023-05-14 09:35:34,866 INFO serviceName: DEFAULT_GROUP@@xmall-ware@@DEFAULT changed, schedule push for: 192.168.115.1:65252, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,65252,6082932995300
+
+2023-05-14 09:35:34,866 INFO send udp packet: 192.168.115.1,65252,6082932995300
+
+2023-05-14 09:35:34,902 INFO [PUSH-SUCC] 37ms, all delay time 571ms, SLA 483ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-ware', ephemeral=true, revision=1}, DataSize=1, target=192.168.115.1
+
+2023-05-14 09:35:52,852 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 09:35:52,852 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:50216, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,50216,6100919637700
+
+2023-05-14 09:35:52,853 INFO send udp packet: 192.168.115.1,50216,6100919637700
+
+2023-05-14 09:35:52,858 INFO [PUSH-SUCC] 6ms, all delay time 607ms, SLA 608ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=12}, DataSize=0, target=192.168.115.1
+
+2023-05-14 09:36:26,901 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=13}
+
+2023-05-14 09:36:27,199 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 09:36:27,199 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:53421, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,53421,6135266623300
+
+2023-05-14 09:36:27,199 INFO send udp packet: 192.168.115.1,53421,6135266623300
+
+2023-05-14 09:36:27,250 INFO [PUSH-SUCC] 51ms, all delay time 676ms, SLA 349ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=13}, DataSize=1, target=192.168.115.1
+
+2023-05-14 09:38:44,751 INFO DEFAULT_GROUP@@xmall-ware is changed, add it to push queue.
+
+2023-05-14 09:38:44,751 INFO serviceName: DEFAULT_GROUP@@xmall-ware@@DEFAULT changed, schedule push for: 192.168.115.1:65252, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,65252,6272818919900
+
+2023-05-14 09:38:44,751 INFO send udp packet: 192.168.115.1,65252,6272818919900
+
+2023-05-14 09:38:44,756 INFO [PUSH-SUCC] 5ms, all delay time 538ms, SLA 538ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-ware', ephemeral=true, revision=2}, DataSize=0, target=192.168.115.1
+
+2023-05-14 09:39:18,857 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='xmall-ware', ephemeral=true, revision=3}
+
+2023-05-14 09:39:19,257 INFO DEFAULT_GROUP@@xmall-ware is changed, add it to push queue.
+
+2023-05-14 09:39:19,257 INFO serviceName: DEFAULT_GROUP@@xmall-ware@@DEFAULT changed, schedule push for: 192.168.115.1:54860, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,54860,6307324525900
+
+2023-05-14 09:39:19,257 INFO send udp packet: 192.168.115.1,54860,6307324525900
+
+2023-05-14 09:39:19,289 INFO [PUSH-SUCC] 32ms, all delay time 532ms, SLA 432ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-ware', ephemeral=true, revision=3}, DataSize=1, target=192.168.115.1
+
+2023-05-14 09:40:41,359 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 09:40:41,360 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:53421, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,53421,6389426852800
+
+2023-05-14 09:40:41,360 INFO send udp packet: 192.168.115.1,53421,6389426852800
+
+2023-05-14 09:40:41,370 INFO [PUSH-SUCC] 11ms, all delay time 602ms, SLA 602ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=14}, DataSize=0, target=192.168.115.1
+
+2023-05-14 09:41:09,734 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=15}
+
+2023-05-14 09:41:10,200 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 09:41:10,200 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:64041, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,64041,6418267761400
+
+2023-05-14 09:41:10,200 INFO send udp packet: 192.168.115.1,64041,6418267761400
+
+2023-05-14 09:41:10,234 INFO [PUSH-SUCC] 34ms, all delay time 593ms, SLA 500ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=15}, DataSize=1, target=192.168.115.1
+
+2023-05-14 09:43:08,202 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 09:43:08,202 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:64041, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,64041,6536269135200
+
+2023-05-14 09:43:08,202 INFO send udp packet: 192.168.115.1,64041,6536269135200
+
+2023-05-14 09:43:08,205 INFO [PUSH-SUCC] 3ms, all delay time 591ms, SLA 591ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=16}, DataSize=0, target=192.168.115.1
+
+2023-05-14 09:43:36,800 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=17}
+
+2023-05-14 09:43:37,197 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 09:43:37,197 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:57485, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,57485,6565264912100
+
+2023-05-14 09:43:37,197 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 09:43:37,197 INFO send udp packet: 192.168.115.1,57485,6565264912100
+
+2023-05-14 09:43:37,198 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:64041, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,64041,6565265190400
+
+2023-05-14 09:43:37,198 INFO send udp packet: 192.168.115.1,64041,6565265190400
+
+2023-05-14 09:43:37,231 INFO [PUSH-SUCC] 34ms, all delay time 546ms, SLA 431ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=17}, DataSize=1, target=192.168.115.1
+
+2023-05-14 09:43:47,199 INFO retry to push data, key: 192.168.115.1,64041,6565265190400
+
+2023-05-14 09:43:57,201 WARN max re-push times reached, retry times 2, key: 192.168.115.1,64041,6565265190400
+
+2023-05-14 09:43:57,202 ERROR [PUSH-FAIL] 20005ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=17}, reason=null, target=192.168.115.1
+
+2023-05-14 09:48:13,254 INFO DEFAULT_GROUP@@xmall-ware is changed, add it to push queue.
+
+2023-05-14 09:48:13,257 INFO serviceName: DEFAULT_GROUP@@xmall-ware@@DEFAULT changed, schedule push for: 192.168.115.1:54860, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,54860,6841322412100
+
+2023-05-14 09:48:13,257 INFO send udp packet: 192.168.115.1,54860,6841322412100
+
+2023-05-14 09:48:13,267 INFO [PUSH-SUCC] 13ms, all delay time 517ms, SLA 517ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-ware', ephemeral=true, revision=4}, DataSize=0, target=192.168.115.1
+
+2023-05-14 09:48:13,356 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 09:48:13,357 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:57485, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,57485,6841423710500
+
+2023-05-14 09:48:13,357 INFO send udp packet: 192.168.115.1,57485,6841423710500
+
+2023-05-14 09:48:13,366 INFO [PUSH-SUCC] 10ms, all delay time 580ms, SLA 580ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=18}, DataSize=0, target=192.168.115.1
+
+2023-05-14 09:48:39,687 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='xmall-ware', ephemeral=true, revision=5}
+
+2023-05-14 09:48:40,138 INFO DEFAULT_GROUP@@xmall-ware is changed, add it to push queue.
+
+2023-05-14 09:48:40,138 INFO serviceName: DEFAULT_GROUP@@xmall-ware@@DEFAULT changed, schedule push for: 192.168.115.1:54860, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,54860,6868205122800
+
+2023-05-14 09:48:40,138 INFO DEFAULT_GROUP@@xmall-ware is changed, add it to push queue.
+
+2023-05-14 09:48:40,138 INFO send udp packet: 192.168.115.1,54860,6868205122800
+
+2023-05-14 09:48:40,139 INFO serviceName: DEFAULT_GROUP@@xmall-ware@@DEFAULT changed, schedule push for: 192.168.115.1:51001, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,51001,6868205352000
+
+2023-05-14 09:48:40,140 INFO send udp packet: 192.168.115.1,51001,6868205352000
+
+2023-05-14 09:48:40,169 INFO [PUSH-SUCC] 31ms, all delay time 593ms, SLA 482ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-ware', ephemeral=true, revision=5}, DataSize=1, target=192.168.115.1
+
+2023-05-14 09:48:45,126 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=19}
+
+2023-05-14 09:48:45,559 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 09:48:45,559 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:57485, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,57485,6873626925900
+
+2023-05-14 09:48:45,559 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 09:48:45,559 INFO send udp packet: 192.168.115.1,57485,6873626925900
+
+2023-05-14 09:48:45,560 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:53060, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,53060,6873627237700
+
+2023-05-14 09:48:45,560 INFO send udp packet: 192.168.115.1,53060,6873627237700
+
+2023-05-14 09:48:45,589 INFO [PUSH-SUCC] 30ms, all delay time 573ms, SLA 463ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=19}, DataSize=1, target=192.168.115.1
+
+2023-05-14 09:48:50,142 INFO retry to push data, key: 192.168.115.1,54860,6868205122800
+
+2023-05-14 09:48:55,560 INFO retry to push data, key: 192.168.115.1,57485,6873626925900
+
+2023-05-14 09:49:00,144 WARN max re-push times reached, retry times 2, key: 192.168.115.1,54860,6868205122800
+
+2023-05-14 09:49:00,144 ERROR [PUSH-FAIL] 20006ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-ware', ephemeral=true, revision=5}, reason=null, target=192.168.115.1
+
+2023-05-14 09:49:05,579 WARN max re-push times reached, retry times 2, key: 192.168.115.1,57485,6873626925900
+
+2023-05-14 09:49:05,579 ERROR [PUSH-FAIL] 20020ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=19}, reason=null, target=192.168.115.1
+
+2023-05-14 18:08:22,519 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 18:08:22,564 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:53060, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,53060,36850626509300
+
+2023-05-14 18:08:22,565 INFO send udp packet: 192.168.115.1,53060,36850626509300
+
+2023-05-14 18:08:22,588 INFO [PUSH-SUCC] 69ms, all delay time 667ms, SLA 668ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=20}, DataSize=0, target=192.168.115.1
+
+2023-05-14 18:08:52,037 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=21}
+
+2023-05-14 18:08:52,432 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 18:08:52,432 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:62881, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,62881,36880500084300
+
+2023-05-14 18:08:52,432 INFO send udp packet: 192.168.115.1,62881,36880500084300
+
+2023-05-14 18:08:52,469 INFO [PUSH-SUCC] 37ms, all delay time 547ms, SLA 432ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=21}, DataSize=1, target=192.168.115.1
+
+2023-05-14 18:11:08,324 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 18:11:08,325 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:62881, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,62881,37016392168700
+
+2023-05-14 18:11:08,325 INFO send udp packet: 192.168.115.1,62881,37016392168700
+
+2023-05-14 18:11:08,335 INFO [PUSH-SUCC] 11ms, all delay time 513ms, SLA 513ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=22}, DataSize=0, target=192.168.115.1
+
+2023-05-14 18:11:34,872 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=23}
+
+2023-05-14 18:11:35,344 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 18:11:35,344 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:49661, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,49661,37043411645300
+
+2023-05-14 18:11:35,344 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 18:11:35,344 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:62881, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,62881,37043412050600
+
+2023-05-14 18:11:35,344 INFO send udp packet: 192.168.115.1,49661,37043411645300
+
+2023-05-14 18:11:35,347 INFO send udp packet: 192.168.115.1,62881,37043412050600
+
+2023-05-14 18:11:35,383 INFO [PUSH-SUCC] 39ms, all delay time 633ms, SLA 511ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=23}, DataSize=1, target=192.168.115.1
+
+2023-05-14 18:11:45,348 INFO retry to push data, key: 192.168.115.1,62881,37043412050600
+
+2023-05-14 18:11:55,349 WARN max re-push times reached, retry times 2, key: 192.168.115.1,62881,37043412050600
+
+2023-05-14 18:11:55,350 ERROR [PUSH-FAIL] 20006ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=23}, reason=null, target=192.168.115.1
+
+2023-05-14 18:13:48,655 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 18:13:48,667 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:49661, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,49661,37176723215400
+
+2023-05-14 18:13:48,667 INFO send udp packet: 192.168.115.1,49661,37176723215400
+
+2023-05-14 18:13:48,719 INFO [PUSH-SUCC] 64ms, all delay time 657ms, SLA 657ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=24}, DataSize=0, target=192.168.115.1
+
+2023-05-14 18:14:30,988 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=25}
+
+2023-05-14 18:14:31,455 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 18:14:31,455 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:54544, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,54544,37219522862000
+
+2023-05-14 18:14:31,455 INFO send udp packet: 192.168.115.1,54544,37219522862000
+
+2023-05-14 18:14:31,491 INFO [PUSH-SUCC] 36ms, all delay time 597ms, SLA 503ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=25}, DataSize=1, target=192.168.115.1
+
+2023-05-14 18:25:09,778 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 18:25:09,778 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:54544, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,54544,37857845712000
+
+2023-05-14 18:25:09,778 INFO send udp packet: 192.168.115.1,54544,37857845712000
+
+2023-05-14 18:25:09,785 INFO [PUSH-SUCC] 7ms, all delay time 522ms, SLA 522ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=26}, DataSize=0, target=192.168.115.1
+
+2023-05-14 18:25:33,490 INFO DEFAULT_GROUP@@xmall-ware is changed, add it to push queue.
+
+2023-05-14 18:25:33,491 INFO serviceName: DEFAULT_GROUP@@xmall-ware@@DEFAULT changed, schedule push for: 192.168.115.1:51001, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,51001,37881558375000
+
+2023-05-14 18:25:33,491 INFO send udp packet: 192.168.115.1,51001,37881558375000
+
+2023-05-14 18:25:33,504 INFO [PUSH-SUCC] 14ms, all delay time 517ms, SLA 517ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-ware', ephemeral=true, revision=6}, DataSize=0, target=192.168.115.1
+
+2023-05-14 18:25:41,911 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=27}
+
+2023-05-14 18:25:42,421 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 18:25:42,421 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:54544, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,54544,37890488953600
+
+2023-05-14 18:25:42,421 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 18:25:42,421 INFO send udp packet: 192.168.115.1,54544,37890488953600
+
+2023-05-14 18:25:42,423 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:50467, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,50467,37890489158300
+
+2023-05-14 18:25:42,423 INFO send udp packet: 192.168.115.1,50467,37890489158300
+
+2023-05-14 18:25:42,452 INFO [PUSH-SUCC] 31ms, all delay time 627ms, SLA 541ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=27}, DataSize=1, target=192.168.115.1
+
+2023-05-14 18:25:52,424 INFO retry to push data, key: 192.168.115.1,54544,37890488953600
+
+2023-05-14 18:26:02,425 WARN max re-push times reached, retry times 2, key: 192.168.115.1,54544,37890488953600
+
+2023-05-14 18:26:02,425 ERROR [PUSH-FAIL] 20004ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=27}, reason=null, target=192.168.115.1
+
+2023-05-14 18:26:04,719 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='xmall-ware', ephemeral=true, revision=7}
+
+2023-05-14 18:26:05,207 INFO DEFAULT_GROUP@@xmall-ware is changed, add it to push queue.
+
+2023-05-14 18:26:05,207 INFO serviceName: DEFAULT_GROUP@@xmall-ware@@DEFAULT changed, schedule push for: 192.168.115.1:58514, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,58514,37913275190500
+
+2023-05-14 18:26:05,207 INFO send udp packet: 192.168.115.1,58514,37913275190500
+
+2023-05-14 18:26:05,246 INFO [PUSH-SUCC] 39ms, all delay time 609ms, SLA 527ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-ware', ephemeral=true, revision=7}, DataSize=1, target=192.168.115.1
+
+2023-05-14 18:27:21,980 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 18:27:21,980 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:50467, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,50467,37990048176700
+
+2023-05-14 18:27:21,981 INFO send udp packet: 192.168.115.1,50467,37990048176700
+
+2023-05-14 18:27:21,989 INFO [PUSH-SUCC] 9ms, all delay time 515ms, SLA 516ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=28}, DataSize=0, target=192.168.115.1
+
+2023-05-14 18:27:44,973 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=29}
+
+2023-05-14 18:27:45,419 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 18:27:45,419 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:50467, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,50467,38013486435400
+
+2023-05-14 18:27:45,419 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 18:27:45,419 INFO send udp packet: 192.168.115.1,50467,38013486435400
+
+2023-05-14 18:27:45,462 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:56457, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,56457,38013529171000
+
+2023-05-14 18:27:45,463 INFO send udp packet: 192.168.115.1,56457,38013529171000
+
+2023-05-14 18:27:45,514 INFO [PUSH-SUCC] 95ms, all delay time 635ms, SLA 541ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=29}, DataSize=1, target=192.168.115.1
+
+2023-05-14 18:27:55,463 INFO retry to push data, key: 192.168.115.1,50467,38013486435400
+
+2023-05-14 18:28:05,464 WARN max re-push times reached, retry times 2, key: 192.168.115.1,50467,38013486435400
+
+2023-05-14 18:28:05,464 ERROR [PUSH-FAIL] 20045ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=29}, reason=null, target=192.168.115.1
+
+2023-05-14 18:31:53,301 INFO DEFAULT_GROUP@@xmall-gateway is changed, add it to push queue.
+
+2023-05-14 18:31:53,302 INFO serviceName: DEFAULT_GROUP@@xmall-gateway@@DEFAULT changed, schedule push for: 192.168.115.1:53654, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,53654,38261369867700
+
+2023-05-14 18:31:53,302 INFO send udp packet: 192.168.115.1,53654,38261369867700
+
+2023-05-14 18:31:53,330 INFO [PUSH-SUCC] 29ms, all delay time 608ms, SLA 609ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-gateway', ephemeral=true, revision=2}, DataSize=0, target=192.168.115.1
+
+2023-05-14 18:32:04,541 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 18:32:04,541 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:56457, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,56457,38272608363700
+
+2023-05-14 18:32:04,541 INFO send udp packet: 192.168.115.1,56457,38272608363700
+
+2023-05-14 18:32:04,545 INFO [PUSH-SUCC] 4ms, all delay time 526ms, SLA 526ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=30}, DataSize=0, target=192.168.115.1
+
+2023-05-14 18:32:11,312 INFO DEFAULT_GROUP@@xmall-ware is changed, add it to push queue.
+
+2023-05-14 18:32:11,312 INFO serviceName: DEFAULT_GROUP@@xmall-ware@@DEFAULT changed, schedule push for: 192.168.115.1:58514, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,58514,38279379711600
+
+2023-05-14 18:32:11,312 INFO send udp packet: 192.168.115.1,58514,38279379711600
+
+2023-05-14 18:32:11,315 INFO [PUSH-SUCC] 3ms, all delay time 518ms, SLA 518ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-ware', ephemeral=true, revision=8}, DataSize=0, target=192.168.115.1
+
+2023-05-14 19:12:11,269 INFO DEFAULT_GROUP@@xmall-gateway is changed, add it to push queue.
+
+2023-05-14 19:12:11,359 INFO serviceName: DEFAULT_GROUP@@xmall-gateway@@DEFAULT changed, schedule push for: 192.168.115.1:57841, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,57841,40679375025100
+
+2023-05-14 19:12:11,366 INFO send udp packet: 192.168.115.1,57841,40679375025100
+
+2023-05-14 19:12:11,383 INFO [PUSH-SUCC] 116ms, all delay time 626ms for subscriber 192.168.115.1, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-gateway', ephemeral=true, revision=0}, DataSize=0
+
+2023-05-14 19:12:14,350 INFO DEFAULT_GROUP@@xmall-gateway is changed, add it to push queue.
+
+2023-05-14 19:12:14,357 INFO serviceName: DEFAULT_GROUP@@xmall-gateway@@DEFAULT changed, schedule push for: 192.168.115.1:57841, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,57841,40682418174700
+
+2023-05-14 19:12:14,357 INFO send udp packet: 192.168.115.1,57841,40682418174700
+
+2023-05-14 19:12:14,359 INFO [PUSH-SUCC] 9ms, all delay time 595ms, SLA 595ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-gateway', ephemeral=true, revision=1}, DataSize=1, target=192.168.115.1
+
+2023-05-14 19:12:38,254 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='xmall-cart', ephemeral=true, revision=1}
+
+2023-05-14 19:12:38,699 INFO DEFAULT_GROUP@@xmall-cart is changed, add it to push queue.
+
+2023-05-14 19:12:38,700 INFO serviceName: DEFAULT_GROUP@@xmall-cart@@DEFAULT changed, schedule push for: 192.168.115.1:50254, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,50254,40706767065700
+
+2023-05-14 19:12:38,700 INFO send udp packet: 192.168.115.1,50254,40706767065700
+
+2023-05-14 19:12:38,730 INFO [PUSH-SUCC] 31ms, all delay time 560ms, SLA 476ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-cart', ephemeral=true, revision=1}, DataSize=1, target=192.168.115.1
+
+2023-05-14 19:13:24,198 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='xmall-ware', ephemeral=true, revision=1}
+
+2023-05-14 19:13:24,578 INFO DEFAULT_GROUP@@xmall-ware is changed, add it to push queue.
+
+2023-05-14 19:13:24,582 INFO serviceName: DEFAULT_GROUP@@xmall-ware@@DEFAULT changed, schedule push for: 192.168.115.1:54761, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,54761,40752645879500
+
+2023-05-14 19:13:24,582 INFO send udp packet: 192.168.115.1,54761,40752645879500
+
+2023-05-14 19:13:24,617 INFO [PUSH-SUCC] 39ms, all delay time 550ms, SLA 419ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-ware', ephemeral=true, revision=1}, DataSize=1, target=192.168.115.1
+
+2023-05-14 19:13:37,742 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=1}
+
+2023-05-14 19:13:38,234 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 19:13:38,234 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:55783, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,55783,40766302267000
+
+2023-05-14 19:13:38,235 INFO send udp packet: 192.168.115.1,55783,40766302267000
+
+2023-05-14 19:13:38,276 INFO [PUSH-SUCC] 42ms, all delay time 640ms, SLA 534ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=1}, DataSize=1, target=192.168.115.1
+
+2023-05-14 19:14:17,995 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='xmall-member', ephemeral=true, revision=1}
+
+2023-05-14 19:14:18,407 INFO DEFAULT_GROUP@@xmall-member is changed, add it to push queue.
+
+2023-05-14 19:14:18,408 INFO serviceName: DEFAULT_GROUP@@xmall-member@@DEFAULT changed, schedule push for: 192.168.115.1:52651, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,52651,40806475333800
+
+2023-05-14 19:14:18,408 INFO send udp packet: 192.168.115.1,52651,40806475333800
+
+2023-05-14 19:14:18,444 INFO [PUSH-SUCC] 37ms, all delay time 555ms, SLA 449ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-member', ephemeral=true, revision=1}, DataSize=1, target=192.168.115.1
+
+2023-05-14 19:14:43,784 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='xmall-auth-server', ephemeral=true, revision=1}
+
+2023-05-14 19:14:44,247 INFO DEFAULT_GROUP@@xmall-auth-server is changed, add it to push queue.
+
+2023-05-14 19:14:44,248 INFO serviceName: DEFAULT_GROUP@@xmall-auth-server@@DEFAULT changed, schedule push for: 192.168.115.1:56896, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,56896,40832315158600
+
+2023-05-14 19:14:44,248 INFO send udp packet: 192.168.115.1,56896,40832315158600
+
+2023-05-14 19:14:44,283 INFO [PUSH-SUCC] 36ms, all delay time 590ms, SLA 499ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-auth-server', ephemeral=true, revision=1}, DataSize=1, target=192.168.115.1
+
+2023-05-14 19:15:37,104 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 19:15:37,104 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:55783, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,55783,40885172113700
+
+2023-05-14 19:15:37,104 INFO send udp packet: 192.168.115.1,55783,40885172113700
+
+2023-05-14 19:15:37,108 INFO [PUSH-SUCC] 4ms, all delay time 589ms, SLA 590ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=2}, DataSize=0, target=192.168.115.1
+
+2023-05-14 19:15:47,329 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='xmall-product', ephemeral=true, revision=1}
+
+2023-05-14 19:15:47,801 INFO DEFAULT_GROUP@@xmall-product is changed, add it to push queue.
+
+2023-05-14 19:15:47,802 INFO serviceName: DEFAULT_GROUP@@xmall-product@@DEFAULT changed, schedule push for: 192.168.115.1:55316, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,55316,40895869207600
+
+2023-05-14 19:15:47,802 INFO send udp packet: 192.168.115.1,55316,40895869207600
+
+2023-05-14 19:15:47,837 INFO [PUSH-SUCC] 36ms, all delay time 637ms, SLA 508ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-product', ephemeral=true, revision=1}, DataSize=1, target=192.168.115.1
+
+2023-05-14 19:16:29,113 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=3}
+
+2023-05-14 19:16:29,565 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 19:16:29,568 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:61338, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,61338,40937633990400
+
+2023-05-14 19:16:29,568 INFO send udp packet: 192.168.115.1,61338,40937633990400
+
+2023-05-14 19:16:29,739 INFO [PUSH-SUCC] 219ms, all delay time 729ms, SLA 626ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=3}, DataSize=1, target=192.168.115.1
+
+2023-05-14 19:20:43,585 INFO DEFAULT_GROUP@@xmall-member is changed, add it to push queue.
+
+2023-05-14 19:20:43,585 INFO serviceName: DEFAULT_GROUP@@xmall-member changed, schedule push for: 192.168.115.1:56896, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,56896,41191652771100
+
+2023-05-14 19:20:43,586 INFO send udp packet: 192.168.115.1,56896,41191652771100
+
+2023-05-14 19:20:43,591 INFO [PUSH-SUCC] 6ms, all delay time 565ms for subscriber 192.168.115.1, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-member', ephemeral=true, revision=1}, DataSize=1
+
+2023-05-14 19:20:52,553 INFO DEFAULT_GROUP@@xmall-member is changed, add it to push queue.
+
+2023-05-14 19:20:52,553 INFO serviceName: DEFAULT_GROUP@@xmall-member changed, schedule push for: 192.168.115.1:61338, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,61338,41200620945900
+
+2023-05-14 19:20:52,553 INFO DEFAULT_GROUP@@xmall-cart is changed, add it to push queue.
+
+2023-05-14 19:20:52,553 INFO send udp packet: 192.168.115.1,61338,41200620945900
+
+2023-05-14 19:20:52,554 INFO serviceName: DEFAULT_GROUP@@xmall-cart changed, schedule push for: 192.168.115.1:61338, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,61338,41200621179600
+
+2023-05-14 19:20:52,554 INFO send udp packet: 192.168.115.1,61338,41200621179600
+
+2023-05-14 19:20:52,555 INFO [PUSH-SUCC] 2ms, all delay time 600ms for subscriber 192.168.115.1, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-member', ephemeral=true, revision=1}, DataSize=1
+
+2023-05-14 19:20:52,556 INFO [PUSH-SUCC] 3ms, all delay time 600ms for subscriber 192.168.115.1, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-cart', ephemeral=true, revision=1}, DataSize=1
+
+2023-05-14 19:20:52,757 INFO DEFAULT_GROUP@@xmall-product is changed, add it to push queue.
+
+2023-05-14 19:20:52,757 INFO serviceName: DEFAULT_GROUP@@xmall-product changed, schedule push for: 192.168.115.1:50254, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,50254,41200824705400
+
+2023-05-14 19:20:52,757 INFO send udp packet: 192.168.115.1,50254,41200824705400
+
+2023-05-14 19:20:52,761 INFO [PUSH-SUCC] 4ms, all delay time 576ms for subscriber 192.168.115.1, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-product', ephemeral=true, revision=1}, DataSize=1
+
+2023-05-14 19:20:53,061 INFO DEFAULT_GROUP@@xmall-ware is changed, add it to push queue.
+
+2023-05-14 19:20:53,061 INFO serviceName: DEFAULT_GROUP@@xmall-ware changed, schedule push for: 192.168.115.1:61338, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,61338,41201128736900
+
+2023-05-14 19:20:53,061 INFO send udp packet: 192.168.115.1,61338,41201128736900
+
+2023-05-14 19:20:53,063 INFO [PUSH-SUCC] 2ms, all delay time 570ms for subscriber 192.168.115.1, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-ware', ephemeral=true, revision=1}, DataSize=1
+
+2023-05-14 19:20:56,007 INFO DEFAULT_GROUP@@xmall-member is changed, add it to push queue.
+
+2023-05-14 19:20:56,007 INFO serviceName: DEFAULT_GROUP@@xmall-member changed, schedule push for: 192.168.115.1:54761, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,54761,41204075153800
+
+2023-05-14 19:20:56,008 INFO send udp packet: 192.168.115.1,54761,41204075153800
+
+2023-05-14 19:20:56,021 INFO [PUSH-SUCC] 15ms, all delay time 596ms for subscriber 192.168.115.1, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-member', ephemeral=true, revision=1}, DataSize=1
+
+2023-05-14 19:20:58,543 INFO DEFAULT_GROUP@@xmall-product is changed, add it to push queue.
+
+2023-05-14 19:20:58,544 INFO serviceName: DEFAULT_GROUP@@xmall-product changed, schedule push for: 192.168.115.1:61338, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,61338,41206611124000
+
+2023-05-14 19:20:58,544 INFO send udp packet: 192.168.115.1,61338,41206611124000
+
+2023-05-14 19:20:58,548 INFO [PUSH-SUCC] 5ms, all delay time 536ms for subscriber 192.168.115.1, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-product', ephemeral=true, revision=1}, DataSize=1
+
+2023-05-14 19:32:17,124 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 19:32:17,168 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:61338, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,61338,41885234989100
+
+2023-05-14 19:32:17,169 INFO send udp packet: 192.168.115.1,61338,41885234989100
+
+2023-05-14 19:32:17,183 INFO [PUSH-SUCC] 61ms, all delay time 654ms, SLA 656ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=4}, DataSize=0, target=192.168.115.1
+
+2023-05-14 19:51:04,432 INFO DEFAULT_GROUP@@xmall-ware is changed, add it to push queue.
+
+2023-05-14 19:51:04,434 INFO serviceName: DEFAULT_GROUP@@xmall-ware@@DEFAULT changed, schedule push for: 192.168.115.1:54761, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,54761,43012500139900
+
+2023-05-14 19:51:04,434 INFO send udp packet: 192.168.115.1,54761,43012500139900
+
+2023-05-14 19:51:04,450 INFO [PUSH-SUCC] 18ms, all delay time 561ms, SLA 563ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-ware', ephemeral=true, revision=2}, DataSize=0, target=192.168.115.1
+
+2023-05-14 19:51:49,041 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='xmall-ware', ephemeral=true, revision=3}
+
+2023-05-14 19:51:49,467 INFO DEFAULT_GROUP@@xmall-ware is changed, add it to push queue.
+
+2023-05-14 19:51:49,468 INFO serviceName: DEFAULT_GROUP@@xmall-ware@@DEFAULT changed, schedule push for: 192.168.115.1:60236, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,60236,43057534647800
+
+2023-05-14 19:51:49,468 INFO send udp packet: 192.168.115.1,60236,43057534647800
+
+2023-05-14 19:51:49,510 INFO [PUSH-SUCC] 43ms, all delay time 573ms, SLA 469ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-ware', ephemeral=true, revision=3}, DataSize=1, target=192.168.115.1
+
+2023-05-14 20:02:34,488 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=1}
+
+2023-05-14 20:02:34,904 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 20:02:34,905 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:60804, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,60804,43702972146200
+
+2023-05-14 20:02:34,905 INFO send udp packet: 192.168.115.1,60804,43702972146200
+
+2023-05-14 20:02:34,976 INFO [PUSH-SUCC] 73ms, all delay time 615ms, SLA 488ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=1}, DataSize=1, target=192.168.115.1
+
+2023-05-14 20:05:12,948 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 20:05:12,948 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:60804, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,60804,43861016165000
+
+2023-05-14 20:05:12,948 INFO send udp packet: 192.168.115.1,60804,43861016165000
+
+2023-05-14 20:05:12,954 INFO [PUSH-SUCC] 6ms, all delay time 537ms, SLA 537ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=2}, DataSize=0, target=192.168.115.1
+
+2023-05-14 20:05:51,209 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=3}
+
+2023-05-14 20:05:51,684 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 20:05:51,684 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:55300, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,55300,43899752057900
+
+2023-05-14 20:05:51,684 INFO send udp packet: 192.168.115.1,55300,43899752057900
+
+2023-05-14 20:05:51,720 INFO [PUSH-SUCC] 36ms, all delay time 628ms, SLA 511ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=3}, DataSize=1, target=192.168.115.1
+
+2023-05-14 20:06:08,652 INFO DEFAULT_GROUP@@xmall-cart is changed, add it to push queue.
+
+2023-05-14 20:06:08,652 INFO serviceName: DEFAULT_GROUP@@xmall-cart changed, schedule push for: 192.168.115.1:55300, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,55300,43916719823500
+
+2023-05-14 20:06:08,652 INFO send udp packet: 192.168.115.1,55300,43916719823500
+
+2023-05-14 20:06:08,653 INFO DEFAULT_GROUP@@xmall-member is changed, add it to push queue.
+
+2023-05-14 20:06:08,653 INFO serviceName: DEFAULT_GROUP@@xmall-member changed, schedule push for: 192.168.115.1:55300, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,55300,43916721074900
+
+2023-05-14 20:06:08,653 INFO send udp packet: 192.168.115.1,55300,43916721074900
+
+2023-05-14 20:06:08,655 INFO [PUSH-SUCC] 2ms, all delay time 562ms for subscriber 192.168.115.1, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-cart', ephemeral=true, revision=1}, DataSize=1
+
+2023-05-14 20:06:08,655 INFO [PUSH-SUCC] 2ms, all delay time 564ms for subscriber 192.168.115.1, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-member', ephemeral=true, revision=1}, DataSize=1
+
+2023-05-14 20:06:08,855 INFO DEFAULT_GROUP@@xmall-ware is changed, add it to push queue.
+
+2023-05-14 20:06:08,856 INFO serviceName: DEFAULT_GROUP@@xmall-ware changed, schedule push for: 192.168.115.1:55300, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,55300,43916923316100
+
+2023-05-14 20:06:08,856 INFO send udp packet: 192.168.115.1,55300,43916923316100
+
+2023-05-14 20:06:08,860 INFO [PUSH-SUCC] 5ms, all delay time 524ms for subscriber 192.168.115.1, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-ware', ephemeral=true, revision=3}, DataSize=1
+
+2023-05-14 20:06:12,834 INFO DEFAULT_GROUP@@xmall-member is changed, add it to push queue.
+
+2023-05-14 20:06:12,834 INFO serviceName: DEFAULT_GROUP@@xmall-member changed, schedule push for: 192.168.115.1:60236, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,60236,43920902233600
+
+2023-05-14 20:06:12,834 INFO send udp packet: 192.168.115.1,60236,43920902233600
+
+2023-05-14 20:06:12,837 INFO [PUSH-SUCC] 3ms, all delay time 580ms for subscriber 192.168.115.1, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-member', ephemeral=true, revision=1}, DataSize=1
+
+2023-05-14 20:06:13,884 INFO DEFAULT_GROUP@@xmall-product is changed, add it to push queue.
+
+2023-05-14 20:06:13,884 INFO serviceName: DEFAULT_GROUP@@xmall-product changed, schedule push for: 192.168.115.1:55300, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,55300,43921952090900
+
+2023-05-14 20:06:13,884 INFO send udp packet: 192.168.115.1,55300,43921952090900
+
+2023-05-14 20:06:13,889 INFO [PUSH-SUCC] 5ms, all delay time 595ms for subscriber 192.168.115.1, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-product', ephemeral=true, revision=1}, DataSize=1
+
+2023-05-14 20:10:09,378 INFO DEFAULT_GROUP@@xmall-ware is changed, add it to push queue.
+
+2023-05-14 20:10:09,381 INFO serviceName: DEFAULT_GROUP@@xmall-ware@@DEFAULT changed, schedule push for: 192.168.115.1:60236, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,60236,44157446619100
+
+2023-05-14 20:10:09,381 INFO DEFAULT_GROUP@@xmall-ware is changed, add it to push queue.
+
+2023-05-14 20:10:09,381 INFO send udp packet: 192.168.115.1,60236,44157446619100
+
+2023-05-14 20:10:09,381 INFO serviceName: DEFAULT_GROUP@@xmall-ware changed, schedule push for: 192.168.115.1:55300, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,55300,44157449288300
+
+2023-05-14 20:10:09,382 INFO send udp packet: 192.168.115.1,55300,44157449288300
+
+2023-05-14 20:10:09,400 INFO [PUSH-SUCC] 19ms, all delay time 602ms, SLA 602ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-ware', ephemeral=true, revision=4}, DataSize=0, target=192.168.115.1
+
+2023-05-14 20:10:09,401 INFO [PUSH-SUCC] 24ms, all delay time 603ms, SLA 603ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-ware', ephemeral=true, revision=4}, DataSize=0, target=192.168.115.1
+
+2023-05-14 20:10:45,321 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='xmall-ware', ephemeral=true, revision=5}
+
+2023-05-14 20:10:45,663 INFO DEFAULT_GROUP@@xmall-ware is changed, add it to push queue.
+
+2023-05-14 20:10:45,663 INFO serviceName: DEFAULT_GROUP@@xmall-ware@@DEFAULT changed, schedule push for: 192.168.115.1:60236, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,60236,44193731395400
+
+2023-05-14 20:10:45,663 INFO send udp packet: 192.168.115.1,60236,44193731395400
+
+2023-05-14 20:10:45,663 INFO DEFAULT_GROUP@@xmall-ware is changed, add it to push queue.
+
+2023-05-14 20:10:45,664 INFO serviceName: DEFAULT_GROUP@@xmall-ware@@DEFAULT changed, schedule push for: 192.168.115.1:60176, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,60176,44193732166300
+
+2023-05-14 20:10:45,664 INFO DEFAULT_GROUP@@xmall-ware is changed, add it to push queue.
+
+2023-05-14 20:10:45,664 INFO send udp packet: 192.168.115.1,60176,44193732166300
+
+2023-05-14 20:10:45,665 INFO serviceName: DEFAULT_GROUP@@xmall-ware changed, schedule push for: 192.168.115.1:55300, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,55300,44193732397900
+
+2023-05-14 20:10:45,665 INFO send udp packet: 192.168.115.1,55300,44193732397900
+
+2023-05-14 20:10:45,669 INFO [PUSH-SUCC] 5ms, all delay time 507ms, SLA 348ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-ware', ephemeral=true, revision=5}, DataSize=1, target=192.168.115.1
+
+2023-05-14 20:10:45,695 INFO [PUSH-SUCC] 32ms, all delay time 533ms, SLA 374ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-ware', ephemeral=true, revision=5}, DataSize=1, target=192.168.115.1
+
+2023-05-14 20:10:55,666 INFO retry to push data, key: 192.168.115.1,60236,44193731395400
+
+2023-05-14 20:11:05,669 WARN max re-push times reached, retry times 2, key: 192.168.115.1,60236,44193731395400
+
+2023-05-14 20:11:05,671 ERROR [PUSH-FAIL] 20008ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-ware', ephemeral=true, revision=5}, reason=null, target=192.168.115.1
+
+2023-05-14 20:11:13,208 INFO DEFAULT_GROUP@@xmall-member is changed, add it to push queue.
+
+2023-05-14 20:11:13,208 INFO serviceName: DEFAULT_GROUP@@xmall-member changed, schedule push for: 192.168.115.1:60176, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,60176,44221275388500
+
+2023-05-14 20:11:13,208 INFO send udp packet: 192.168.115.1,60176,44221275388500
+
+2023-05-14 20:11:13,210 INFO [PUSH-SUCC] 2ms, all delay time 530ms for subscriber 192.168.115.1, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-member', ephemeral=true, revision=1}, DataSize=1
+
+2023-05-14 21:16:04,403 INFO DEFAULT_GROUP@@xmall-gateway is changed, add it to push queue.
+
+2023-05-14 21:16:04,562 INFO serviceName: DEFAULT_GROUP@@xmall-gateway@@DEFAULT changed, schedule push for: 192.168.115.1:57841, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,57841,48112483845600
+
+2023-05-14 21:16:04,564 INFO send udp packet: 192.168.115.1,57841,48112483845600
+
+2023-05-14 21:16:04,604 INFO [PUSH-SUCC] 202ms, all delay time 819ms, SLA 821ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-gateway', ephemeral=true, revision=2}, DataSize=0, target=192.168.115.1
+
+2023-05-14 21:16:06,690 INFO DEFAULT_GROUP@@xmall-cart is changed, add it to push queue.
+
+2023-05-14 21:16:06,690 INFO serviceName: DEFAULT_GROUP@@xmall-cart@@DEFAULT changed, schedule push for: 192.168.115.1:50254, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,50254,48114757943700
+
+2023-05-14 21:16:06,690 INFO send udp packet: 192.168.115.1,50254,48114757943700
+
+2023-05-14 21:16:06,694 INFO DEFAULT_GROUP@@xmall-member is changed, add it to push queue.
+
+2023-05-14 21:16:06,695 INFO DEFAULT_GROUP@@xmall-cart is changed, add it to push queue.
+
+2023-05-14 21:16:06,696 INFO serviceName: DEFAULT_GROUP@@xmall-cart changed, schedule push for: 192.168.115.1:55300, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,55300,48114763451500
+
+2023-05-14 21:16:06,696 INFO serviceName: DEFAULT_GROUP@@xmall-member changed, schedule push for: 192.168.115.1:60176, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,60176,48114763398200
+
+2023-05-14 21:16:06,696 INFO DEFAULT_GROUP@@xmall-member is changed, add it to push queue.
+
+2023-05-14 21:16:06,696 INFO serviceName: DEFAULT_GROUP@@xmall-member@@DEFAULT changed, schedule push for: 192.168.115.1:52651, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,52651,48114763810500
+
+2023-05-14 21:16:06,696 INFO DEFAULT_GROUP@@xmall-member is changed, add it to push queue.
+
+2023-05-14 21:16:06,696 INFO serviceName: DEFAULT_GROUP@@xmall-member changed, schedule push for: 192.168.115.1:56896, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,56896,48114763893300
+
+2023-05-14 21:16:06,696 INFO DEFAULT_GROUP@@xmall-member is changed, add it to push queue.
+
+2023-05-14 21:16:06,696 INFO serviceName: DEFAULT_GROUP@@xmall-member changed, schedule push for: 192.168.115.1:55300, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,55300,48114764147200
+
+2023-05-14 21:16:06,696 INFO send udp packet: 192.168.115.1,55300,48114763451500
+
+2023-05-14 21:16:06,697 INFO send udp packet: 192.168.115.1,60176,48114763398200
+
+2023-05-14 21:16:06,698 INFO send udp packet: 192.168.115.1,52651,48114763810500
+
+2023-05-14 21:16:06,699 INFO send udp packet: 192.168.115.1,56896,48114763893300
+
+2023-05-14 21:16:06,707 INFO [PUSH-SUCC] 17ms, all delay time 626ms, SLA 626ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-cart', ephemeral=true, revision=2}, DataSize=0, target=192.168.115.1
+
+2023-05-14 21:16:06,710 INFO [PUSH-SUCC] 16ms, all delay time 582ms, SLA 583ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-member', ephemeral=true, revision=2}, DataSize=0, target=192.168.115.1
+
+2023-05-14 21:16:06,716 INFO [PUSH-SUCC] 26ms, all delay time 635ms, SLA 635ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-cart', ephemeral=true, revision=2}, DataSize=0, target=192.168.115.1
+
+2023-05-14 21:16:06,718 INFO send udp packet: 192.168.115.1,55300,48114764147200
+
+2023-05-14 21:16:06,720 INFO [PUSH-SUCC] 24ms, all delay time 592ms, SLA 593ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-member', ephemeral=true, revision=2}, DataSize=0, target=192.168.115.1
+
+2023-05-14 21:16:06,722 INFO [PUSH-SUCC] 26ms, all delay time 594ms, SLA 595ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-member', ephemeral=true, revision=2}, DataSize=0, target=192.168.115.1
+
+2023-05-14 21:16:06,725 INFO [PUSH-SUCC] 29ms, all delay time 597ms, SLA 598ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-member', ephemeral=true, revision=2}, DataSize=0, target=192.168.115.1
+
+2023-05-14 21:16:06,898 INFO DEFAULT_GROUP@@xmall-ware is changed, add it to push queue.
+
+2023-05-14 21:16:06,899 INFO serviceName: DEFAULT_GROUP@@xmall-ware@@DEFAULT changed, schedule push for: 192.168.115.1:60176, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,60176,48114966672300
+
+2023-05-14 21:16:06,899 INFO DEFAULT_GROUP@@xmall-ware is changed, add it to push queue.
+
+2023-05-14 21:16:06,899 INFO serviceName: DEFAULT_GROUP@@xmall-ware changed, schedule push for: 192.168.115.1:55300, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,55300,48114967187400
+
+2023-05-14 21:16:06,899 INFO send udp packet: 192.168.115.1,60176,48114966672300
+
+2023-05-14 21:16:06,901 INFO send udp packet: 192.168.115.1,55300,48114967187400
+
+2023-05-14 21:16:06,903 INFO [PUSH-SUCC] 5ms, all delay time 578ms, SLA 578ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-ware', ephemeral=true, revision=6}, DataSize=0, target=192.168.115.1
+
+2023-05-14 21:16:06,911 INFO [PUSH-SUCC] 12ms, all delay time 586ms, SLA 586ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-ware', ephemeral=true, revision=6}, DataSize=0, target=192.168.115.1
+
+2023-05-14 21:16:07,114 INFO DEFAULT_GROUP@@xmall-order is changed, add it to push queue.
+
+2023-05-14 21:16:07,115 INFO serviceName: DEFAULT_GROUP@@xmall-order@@DEFAULT changed, schedule push for: 192.168.115.1:55300, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,55300,48115182048300
+
+2023-05-14 21:16:07,115 INFO send udp packet: 192.168.115.1,55300,48115182048300
+
+2023-05-14 21:16:07,120 INFO [PUSH-SUCC] 6ms, all delay time 581ms, SLA 581ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-order', ephemeral=true, revision=4}, DataSize=0, target=192.168.115.1
+
+2023-05-14 21:16:07,216 INFO DEFAULT_GROUP@@xmall-product is changed, add it to push queue.
+
+2023-05-14 21:16:07,216 INFO serviceName: DEFAULT_GROUP@@xmall-product changed, schedule push for: 192.168.115.1:50254, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,50254,48115284579500
+
+2023-05-14 21:16:07,217 INFO send udp packet: 192.168.115.1,50254,48115284579500
+
+2023-05-14 21:16:07,217 INFO DEFAULT_GROUP@@xmall-product is changed, add it to push queue.
+
+2023-05-14 21:16:07,217 INFO serviceName: DEFAULT_GROUP@@xmall-product@@DEFAULT changed, schedule push for: 192.168.115.1:55316, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,55316,48115285409800
+
+2023-05-14 21:16:07,217 INFO DEFAULT_GROUP@@xmall-product is changed, add it to push queue.
+
+2023-05-14 21:16:07,217 INFO send udp packet: 192.168.115.1,55316,48115285409800
+
+2023-05-14 21:16:07,219 INFO serviceName: DEFAULT_GROUP@@xmall-product changed, schedule push for: 192.168.115.1:55300, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,55300,48115285568000
+
+2023-05-14 21:16:07,219 INFO send udp packet: 192.168.115.1,55300,48115285568000
+
+2023-05-14 21:16:07,222 INFO [PUSH-SUCC] 6ms, all delay time 584ms, SLA 584ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-product', ephemeral=true, revision=2}, DataSize=0, target=192.168.115.1
+
+2023-05-14 21:16:07,224 INFO [PUSH-SUCC] 7ms, all delay time 586ms, SLA 586ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-product', ephemeral=true, revision=2}, DataSize=0, target=192.168.115.1
+
+2023-05-14 21:16:07,233 INFO [PUSH-SUCC] 16ms, all delay time 595ms, SLA 595ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-product', ephemeral=true, revision=2}, DataSize=0, target=192.168.115.1
+
+2023-05-14 21:16:07,480 INFO DEFAULT_GROUP@@xmall-auth-server is changed, add it to push queue.
+
+2023-05-14 21:16:07,481 INFO serviceName: DEFAULT_GROUP@@xmall-auth-server@@DEFAULT changed, schedule push for: 192.168.115.1:56896, agent: Nacos-Java-Client:v1.4.1, key: 192.168.115.1,56896,48115548301400
+
+2023-05-14 21:16:07,528 INFO send udp packet: 192.168.115.1,56896,48115548301400
+
+2023-05-14 21:16:07,544 INFO [PUSH-SUCC] 64ms, all delay time 627ms, SLA 627ms, Service{namespace='public', group='DEFAULT_GROUP', name='xmall-auth-server', ephemeral=true, revision=2}, DataSize=0, target=192.168.115.1
+

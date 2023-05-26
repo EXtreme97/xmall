@@ -3,6 +3,7 @@ package com.example.xmall.order.service.impl;
 import com.alibaba.fastjson.TypeReference;
 import com.baomidou.mybatisplus.core.toolkit.IdWorker;
 import com.example.common.exception.NoStockException;
+import com.example.common.to.OrderTo;
 import com.example.common.utils.R;
 import com.example.common.vo.MemberRespVo;
 import com.example.xmall.order.constant.OrderConstant;
@@ -17,6 +18,8 @@ import com.example.xmall.order.service.OrderItemService;
 import com.example.xmall.order.to.OrderCreateTo;
 import com.example.xmall.order.vo.*;
 import io.seata.spring.annotation.GlobalTransactional;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.script.DefaultRedisScript;
@@ -60,9 +63,10 @@ public class OrderServiceImpl extends ServiceImpl<OrderDao, OrderEntity> impleme
     RedisTemplate redisTemplate;
     @Autowired
     ProductFeignService productFeignService;
-    private BigDecimal subtract;
     @Autowired
     OrderItemService orderItemService;
+    @Autowired
+    RabbitTemplate rabbitTemplate;
 
     @Override
     public PageUtils queryPage(Map<String, Object> params) {
@@ -114,7 +118,7 @@ public class OrderServiceImpl extends ServiceImpl<OrderDao, OrderEntity> impleme
         return confirmVo;
     }
 
-    @GlobalTransactional
+    //    @GlobalTransactional
     @Transactional
     @Override
     public SubmitResponseVo submitOrder(OrderSubmitVo vo) {
@@ -150,15 +154,40 @@ public class OrderServiceImpl extends ServiceImpl<OrderDao, OrderEntity> impleme
                 R r = wmsFeignService.orderLockStcok(lockVo);
                 if (r.getCode() == 0) {
                     response.setOrder(order.getOrder());
+                    rabbitTemplate.convertAndSend("order-event-exchange", "order.create.order", order.getOrder());
                     return response;
                 } else {
                     response.setCode(3);
-                    throw  new NoStockException();
+                    throw new NoStockException();
                     //return response;
                 }
             } else {
                 response.setCode(2);
                 return response;
+            }
+        }
+    }
+
+    @Override
+    public OrderEntity getOrderBySn(String orderSn) {
+        OrderEntity order_sn = this.getOne(new QueryWrapper<OrderEntity>().eq("order_sn", orderSn));
+
+        return order_sn;
+    }
+
+    @Override
+    public void closeOrder(OrderEntity entity) {
+        OrderEntity byId = this.getById(entity.getId());
+        if (byId.getStatus() == OrderStatusEnum.CREATE_NEW.getCode()) {
+            OrderEntity update = new OrderEntity();
+            update.setId(update.getId());
+            update.setStatus(OrderStatusEnum.CANCLED.getCode());
+            this.updateById(update);
+            OrderTo orderTo = new OrderTo();
+            BeanUtils.copyProperties(byId, orderTo);
+            try {
+                rabbitTemplate.convertAndSend("order-event-exchange", "order.release.other");
+            } catch (Exception e) {
             }
         }
     }

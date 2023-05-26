@@ -13,6 +13,7 @@ import com.example.xmall.product.feign.SearchFeignService1;
 import com.example.xmall.product.feign.WareFeignService;
 import com.example.xmall.product.service.*;
 import com.example.xmall.product.vo.*;
+import io.seata.spring.annotation.GlobalTransactional;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -79,7 +80,7 @@ public class SpuInfoServiceImpl extends ServiceImpl<SpuInfoDao, SpuInfoEntity> i
         return new PageUtils(page);
     }
 
-    @Transactional
+    @GlobalTransactional
     @Override
     public void saveSpuInfo(SpuSaveVo vo) {
 
@@ -243,7 +244,7 @@ public class SpuInfoServiceImpl extends ServiceImpl<SpuInfoDao, SpuInfoEntity> i
 
         return new PageUtils(page);
     }
-
+    @GlobalTransactional
     @Override
     public void up(Long spuId) {
         //1.查当前spu id对应的sku信息，品牌的名字
@@ -314,6 +315,7 @@ public class SpuInfoServiceImpl extends ServiceImpl<SpuInfoDao, SpuInfoEntity> i
         }
     }
 
+    @GlobalTransactional
     @Override
     public SpuInfoEntity getSpuInfoBySkuId(Long skuId) {
         SkuInfoEntity byId = skuInfoService.getById(skuId);
