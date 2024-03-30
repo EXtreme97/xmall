@@ -10,12 +10,10 @@ import org.springframework.util.StringUtils;
 
 import javax.sql.DataSource;
 
-//@Configuration
+@Configuration
 public class MySeataConfig {
     @Autowired
     DataSourceProperties dataSourceProperties;
-
-
     @Bean
     public DataSource dataSource(DataSourceProperties dataSourceProperties) {
 
@@ -23,7 +21,6 @@ public class MySeataConfig {
         if (StringUtils.hasText(dataSourceProperties.getName())) {
             dataSource.setPoolName(dataSourceProperties.getName());
         }
-
         return new DataSourceProxy(dataSource);
     }
 }

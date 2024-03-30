@@ -80,7 +80,8 @@ public class SpuInfoServiceImpl extends ServiceImpl<SpuInfoDao, SpuInfoEntity> i
         return new PageUtils(page);
     }
 
-    @GlobalTransactional
+//    @GlobalTransactional
+    @Transactional
     @Override
     public void saveSpuInfo(SpuSaveVo vo) {
 
@@ -244,7 +245,8 @@ public class SpuInfoServiceImpl extends ServiceImpl<SpuInfoDao, SpuInfoEntity> i
 
         return new PageUtils(page);
     }
-    @GlobalTransactional
+//    @GlobalTransactional
+    @Transactional
     @Override
     public void up(Long spuId) {
         //1.查当前spu id对应的sku信息，品牌的名字
@@ -315,7 +317,8 @@ public class SpuInfoServiceImpl extends ServiceImpl<SpuInfoDao, SpuInfoEntity> i
         }
     }
 
-    @GlobalTransactional
+//    @GlobalTransactional
+    @Transactional
     @Override
     public SpuInfoEntity getSpuInfoBySkuId(Long skuId) {
         SkuInfoEntity byId = skuInfoService.getById(skuId);

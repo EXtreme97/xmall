@@ -1,12 +1,19 @@
 package com.example.xmall.order.service.impl;
 
 import com.alibaba.fastjson.TypeReference;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.toolkit.IdWorker;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.example.common.exception.NoStockException;
 import com.example.common.to.OrderTo;
+import com.example.common.utils.PageUtils;
+import com.example.common.utils.Query;
 import com.example.common.utils.R;
 import com.example.common.vo.MemberRespVo;
 import com.example.xmall.order.constant.OrderConstant;
+import com.example.xmall.order.dao.OrderDao;
+import com.example.xmall.order.entity.OrderEntity;
 import com.example.xmall.order.entity.OrderItemEntity;
 import com.example.xmall.order.enume.OrderStatusEnum;
 import com.example.xmall.order.feign.CartFeignService;
@@ -15,15 +22,19 @@ import com.example.xmall.order.feign.ProductFeignService;
 import com.example.xmall.order.feign.WmsFeignService;
 import com.example.xmall.order.interceptor.LoginInterceptor;
 import com.example.xmall.order.service.OrderItemService;
+import com.example.xmall.order.service.OrderService;
 import com.example.xmall.order.to.OrderCreateTo;
 import com.example.xmall.order.vo.*;
-import io.seata.spring.annotation.GlobalTransactional;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.script.DefaultRedisScript;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.util.StringUtils;
+import org.springframework.web.context.request.RequestAttributes;
+import org.springframework.web.context.request.RequestContextHolder;
 
 import java.math.BigDecimal;
 import java.util.*;
@@ -32,20 +43,6 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
-
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.example.common.utils.PageUtils;
-import com.example.common.utils.Query;
-
-import com.example.xmall.order.dao.OrderDao;
-import com.example.xmall.order.entity.OrderEntity;
-import com.example.xmall.order.service.OrderService;
-import org.springframework.transaction.annotation.Transactional;
-import org.springframework.util.StringUtils;
-import org.springframework.web.context.request.RequestAttributes;
-import org.springframework.web.context.request.RequestContextHolder;
 
 
 @Service("orderService")
@@ -118,7 +115,7 @@ public class OrderServiceImpl extends ServiceImpl<OrderDao, OrderEntity> impleme
         return confirmVo;
     }
 
-    //    @GlobalTransactional
+//        @GlobalTransactional
     @Transactional
     @Override
     public SubmitResponseVo submitOrder(OrderSubmitVo vo) {
@@ -170,9 +167,8 @@ public class OrderServiceImpl extends ServiceImpl<OrderDao, OrderEntity> impleme
 
     @Override
     public OrderEntity getOrderBySn(String orderSn) {
-        OrderEntity order_sn = this.getOne(new QueryWrapper<OrderEntity>().eq("order_sn", orderSn));
 
-        return order_sn;
+        return this.getOne(new QueryWrapper<OrderEntity>().eq("order_sn", orderSn));
     }
 
     @Override

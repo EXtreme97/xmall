@@ -14,15 +14,12 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: 127.0.0.1:8848
+        server-addr: 127.0.0.1:8838
     alicloud:
       access-key: LTAI5tFgs3DVq1DcPAUe3CAx
       secret-key: ePyxIt9D4rPeYXTIDSKiqqciIfuHiV
       oss:
         endpoint: oss-cn-beijing.aliyuncs.com
-    alibaba:
-      seata:
-        tx-service-group: seata_tx_server
   main:
     allow-circular-references: true
   jackson:
@@ -50,6 +47,4 @@ server:
 logging:
   level:
     com.example: debug
-seata:
-  tx-service-group: my_test_tx_group
-  application-id: seata-server
+

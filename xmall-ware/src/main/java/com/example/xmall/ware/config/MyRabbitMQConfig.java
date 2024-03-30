@@ -15,10 +15,12 @@ import java.util.HashMap;
 @Configuration
 public class MyRabbitMQConfig {
     @RabbitListener(queues = "stock.release.stock.queue")
-    public void handle(){}
+    public void handle() {
+    }
 
     /**
      * 使用JSON序列化机制，进行消息转换
+     *
      * @return
      */
     @Bean
@@ -33,6 +35,7 @@ public class MyRabbitMQConfig {
 
     /**
      * 库存服务默认的交换机
+     *
      * @return
      */
     @Bean
@@ -44,6 +47,7 @@ public class MyRabbitMQConfig {
 
     /**
      * 普通队列
+     *
      * @return
      */
     @Bean
@@ -53,9 +57,9 @@ public class MyRabbitMQConfig {
         return queue;
     }
 
-
     /**
      * 延迟队列
+     *
      * @return
      */
     @Bean
@@ -67,41 +71,31 @@ public class MyRabbitMQConfig {
         // 消息过期时间 2分钟
         arguments.put("x-message-ttl", 120000);
 
-        Queue queue = new Queue("stock.delay.queue", true, false, false,arguments);
+        Queue queue = new Queue("stock.delay.queue", true, false, false, arguments);
         return queue;
     }
 
-
     /**
      * 交换机与普通队列绑定
+     *
      * @return
      */
     @Bean
     public Binding stockLocked() {
         //String destination, DestinationType destinationType, String exchange, String routingKey,
         // 			Map<String, Object> arguments
-        Binding binding = new Binding("stock.release.stock.queue",
-                Binding.DestinationType.QUEUE,
-                "stock-event-exchange",
-                "stock.release.#",
-                null);
+        Binding binding = new Binding("stock.release.stock.queue", Binding.DestinationType.QUEUE, "stock-event-exchange", "stock.release.#", null);
 
         return binding;
     }
 
-
     /**
      * 交换机与延迟队列绑定
+     *
      * @return
      */
     @Bean
     public Binding stockLockedBinding() {
-        return new Binding("stock.delay.queue",
-                Binding.DestinationType.QUEUE,
-                "stock-event-exchange",
-                "stock.locked",
-                null);
+        return new Binding("stock.delay.queue", Binding.DestinationType.QUEUE, "stock-event-exchange", "stock.locked", null);
     }
-
-
 }

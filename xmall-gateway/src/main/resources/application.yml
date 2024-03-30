@@ -71,6 +71,12 @@ spring:
           uri: lb://xmall-order
           predicates:
             - Path=order.gulimall.com
+
+        - id: gulimall_coupon_route
+          uri: lb://xmall-coupon
+          predicates:
+            - Path=/api/coupon/**,
+          filters:
+            - RewritePath=/api/(?<segment>.*),/$\{segment}
   main:
     allow-circular-references: true
-

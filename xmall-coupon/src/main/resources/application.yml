@@ -7,8 +7,7 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: 127.0.0.1:8848
-
+        server-addr: 127.0.0.1:8838
   application:
     name: xmall-coupon
   main:
@@ -21,7 +20,4 @@ mybatis-plus:
 
 server:
   port: 7000
-seata:
-  tx-service-group: my_test_tx_group
-  application-id: seata-server
 

@@ -78,18 +78,14 @@ public class WareSkuServiceImpl extends ServiceImpl<WareSkuDao, WareSkuEntity> i
         if (!StringUtils.isEmpty(skuId)) {
             queryWrapper.eq("sku_id", skuId);
         }
-
         String wareId = (String) params.get("wareId");
         if (!StringUtils.isEmpty(wareId)) {
             queryWrapper.eq("ware_id", wareId);
         }
-
-
         IPage<WareSkuEntity> page = this.page(
                 new Query<WareSkuEntity>().getPage(params),
                 queryWrapper
         );
-
         return new PageUtils(page);
     }
 
@@ -114,10 +110,7 @@ public class WareSkuServiceImpl extends ServiceImpl<WareSkuDao, WareSkuEntity> i
                     skuEntity.setSkuName((String) data.get("skuName"));
                 }
             } catch (Exception e) {
-
             }
-
-
             wareSkuDao.insert(skuEntity);
         } else {
             wareSkuDao.addStock(skuId, wareId, skuNum);
